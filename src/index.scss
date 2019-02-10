@@ -262,15 +262,24 @@ body,.body-wrap{
 //第7页 真人
 .og-game-wrap{
   .og-game{
-    //>.description{
-    //  margin: 40px auto 0;
-    //  width: 1000px;
-    //  color:#333;
-    //}
-    //.og-bg{
-    //  display: block;
-    //  margin: 10px auto 0;
-    //}
+    width: 1160px;
+    margin: 100px auto 0;
+    .og-game-description{
+      float: left;
+      width: 584px;
+      font-size:20px;
+      line-height: 34px;
+      color:#fff;
+      font-weight:400;
+    }
+    .og-game-bg2{
+      display: block;
+      margin-top: 70px;
+    }
+    .og-game-bg{
+      display: block;
+      float: right;
+    }
   }
 }
 
@@ -289,3 +298,44 @@ body,.body-wrap{
     }
   }
 }
+
+
+//第9页 联系我们
+.contact-wrap{
+  .contact{
+    margin-top: 180px;
+   >ul{
+     display: flex;
+     justify-content: space-between;
+     width: 1060px;
+     margin: 0 auto;
+     >li{
+       width: 300px;
+       height: 360px;
+       background: #fff;
+       list-style: none;
+       box-shadow:5px 8px 30px 0px rgba(0, 0, 0, 0.2);
+       text-align: center;
+       letter-spacing: 0;
+       >img{
+         margin-top: 40px;
+         width: 154px;
+         height: 154px;
+       }
+       >h5{
+         margin-top: 20px;
+         font-size:24px;
+         line-height: 24px;
+       }
+       >p{
+         margin-top: 20px;
+         font-size:24px;
+         line-height: 34px;
+       }
+     }
+   }
+
+  }
+}
+
+

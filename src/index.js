@@ -16,6 +16,9 @@ import egameBg from "./imgs/egame-bg.png"
 import chessBg from "./imgs/chess-bg.png"
 import ogBg from "./imgs/og-bg.png"
 import ogBg2 from "./imgs/og-bg2.png"
+import phoneImg from "./imgs/phone.png"
+import telegramImg from "./imgs/telegram.png"
+import whatsappImg from "./imgs/whatsapp.png"
 
 
 class App extends React.Component {
@@ -35,13 +38,11 @@ class App extends React.Component {
                 "height": document.body.offsetHeight + "px"
             }
         })
-
-
         this.pageChange();
         this.swiper.on('slideChange', ()=> {
             this.pageChange(this.swiper.realIndex)
         });
-        this.slideTo(6)
+        this.slideTo(0)
     }
     pageChange(index=0){//翻页之后 动画
         console.log(index)
@@ -169,7 +170,7 @@ class App extends React.Component {
                            <DownPage type={2} goNext={this.goNext} />
                            <div className="head-title head-title5"/>
                            <div className="egame">
-                               <p className="description">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                               <p className="description">恒博游戏，市場最新，恒博娛樂與供應商間絕佳合作關係，特接入多超過数十款電子遊戲產品，包含人人喜歡刺激的千炮捕鱼、大满贯MW电子、斗地主以及森林舞会等項目；恒博娛樂憑借整合技術優勢，隨時保持鮮活趣味，提供玩家最佳互動體驗</p>
                                <img className="egame-bg" src={egameBg} alt="棋牌"/>
                            </div>
                        </div>
@@ -181,9 +182,10 @@ class App extends React.Component {
                            <DownPage goNext={this.goNext} />
                            <div className="head-title head-title6 "/>
                             <div className="og-game">
-                                <p></p>
+                                <p className="og-game-description">恒博娱乐提供多款真人視訊遊戲平台，提供高清視頻流及無限遊戲玩法。超越業眾步調，接入知名品牌產品，集成东方集团旗下的OG视讯等款遊戲。憑藉我們的純熟快速的技術團隊，提供穩定性高、畫面清晰的播界面，讓玩家更即時精准，如同親臨現場娛樂場所。我們的優勢經驗，為各運營商提供最佳的解決方案，不論是單獨介接遊戲或是集成網站，都將超乎您所想像。
+                                    <img className="og-game-bg2" src={ogBg2} alt=""/>
+                                </p>
                                 <img src={ogBg} alt=""/>
-                                <img src={ogBg2} alt=""/>
                             </div>
                        </div>
                    </div>
@@ -193,15 +195,46 @@ class App extends React.Component {
                            <DownPage goNext={this.goNext} />
                            <div className="head-title head-title7"/>
                            <div className="chess">
-                               <p className="description">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                               <p className="description">恒博娛樂引进目前国际流行的棋牌游戏，包括开元棋牌。乐游 VG棋牌也将陆续开启，引领市场，给您不一样的绝佳体验。</p>
                                <img className="chess-bg" src={chessBg} alt="棋牌"/>
                            </div>
                        </div>
                    </div>
                    <div style={this.state.size}>
-                       <div className="container bg6" id="page8">
+                       <div className="container bg6 contact-wrap" id="page8">
+                           <Logo />
                            <div className="head-title head-title8"/>
-
+                           <div className="contact">
+                               <ul>
+                                   <li>
+                                       <img src={whatsappImg} alt=""/>
+                                       <h5>WhatsApp</h5>
+                                       <p>
+                                           恒博：+639771123456
+                                           <br/>
+                                           大川：+639273123456
+                                       </p>
+                                   </li>
+                                   <li>
+                                       <img src={telegramImg} alt=""/>
+                                       <h5>WhatsApp</h5>
+                                       <p>
+                                           恒博：+639771123456
+                                           <br/>
+                                           大川：+639273123456
+                                       </p>
+                                   </li>
+                                   <li>
+                                       <img src={phoneImg} alt=""/>
+                                       <h5>WhatsApp</h5>
+                                       <p>
+                                           恒博：+639771123456
+                                           <br/>
+                                           大川：+639273123456
+                                       </p>
+                                   </li>
+                               </ul>
+                           </div>
                        </div>
                    </div>
                </Swiper>
