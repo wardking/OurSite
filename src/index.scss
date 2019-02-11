@@ -20,27 +20,27 @@ body,.body-wrap{
 
 .bg1{
   background: url("./imgs/bg1.png")  top center no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 .bg2{
   background: url("./imgs/bg2.png")  top center no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 .bg3{
   background: url("./imgs/bg3.png")  top center no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 .bg4{
   background: url("./imgs/bg4.png")  top center no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 .bg5{
   background: url("./imgs/bg5.png")  top center no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 .bg6{
   background: url("./imgs/bg6.png")  top center no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 
 .container{
@@ -71,6 +71,16 @@ body,.body-wrap{
     &:hover{
       background-color: rgba(0,0,0,.2);
     }
+
+    // 小于1600
+    @media screen and (max-width: 1600px){
+      background:yellow;
+    }
+    // 小于600
+    @media screen and (max-width: 600px){
+      background:black;
+    }
+
   }
 
   // 每页标题
