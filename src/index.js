@@ -30,14 +30,20 @@ class App extends React.Component {
         this.goNext = this.goNext.bind(this)
         this.swiper = null
     }
-
-    componentDidMount(){
+    setSize(){
         this.setState({
             size: {
                 "width": document.body.offsetWidth + "px",
                 "height": document.body.offsetHeight + "px"
             }
         })
+    }
+    componentDidMount(){
+        this.setSize();
+        window.addEventListener('resize', ()=>{
+            this.setSize();
+        });
+
         this.pageChange();
         this.swiper.on('slideChange', ()=> {
             this.pageChange(this.swiper.realIndex)
@@ -48,28 +54,23 @@ class App extends React.Component {
         console.log(index)
         switch (index) {
             case 1:
-                animateCss('#page1 .head-title', 'bounceInLeft')
+                animateCss('.new-lottery-wrap .head-title', 'bounceInLeft');
                 break;
             case 2:
-                animateCss('#page2 .head-title', 'bounceInLeft')
+
                 break;
             case 3:
-                animateCss('#page3 .head-title', 'bounceInLeft')
+
                 break;
             case 4:
-                animateCss('#page4 .head-title', 'bounceInLeft')
                 break;
             case 5:
-                animateCss('#page5 .head-title', 'bounceInLeft')
                 break;
             case 6:
-                animateCss('#page6 .head-title', 'bounceInLeft')
                 break;
             case 7:
-                animateCss('#page7 .head-title', 'bounceInLeft')
                 break;
             case 8:
-                animateCss('#page8 .head-title', 'bounceInLeft')
                 break;
             case 0:
             default:
@@ -100,51 +101,41 @@ class App extends React.Component {
            <div>
                <Swiper {...params}  ref={node => {if(node) this.swiper = node.swiper} }>
                    <div style={this.state.size}>
-                       <div className="container bg1 home-wrap" id="page0">
+                       <div className="container bg1">
                            <Logo white={1} />
                            <DownPage goNext={this.goNext} />
-                           <div className="home">
+                           <div className="content home-wrap">
                                <div className="company-logo"></div>
                                <div className="company-about">彩票包网提供商</div>
                                <div className="company-game">
                                    <ul>
-                                       <li onClick={()=>this.slideTo(1)}>DC彩票</li>
-                                       <li onClick={()=>this.slideTo(2)}>棋牌游戏</li>
-                                       <li onClick={()=>this.slideTo(3)}>真人娱乐</li>
-                                       <li onClick={()=>this.slideTo(4)}>棋牌游戏</li>
+                                       <li onClick={()=>this.slideTo(3)}>恒博彩票</li>
+                                       <li onClick={()=>this.slideTo(4)}>电子游艺</li>
+                                       <li onClick={()=>this.slideTo(5)}>真人娱乐</li>
+                                       <li onClick={()=>this.slideTo(6)}>棋牌游戏</li>
                                    </ul>
                                </div>
                            </div>
                        </div>
                    </div>
+
                    <div style={this.state.size}>
-                       <div className="container bg2 company-wrap"  id="page1">
-                           <Logo />
-                           <DownPage type={2} goNext={this.goNext} />
-                           <div className="head-title head-title1"/>
-                           <div className="company">
-                               <img width="535" src={companyBg} alt=""/>
-                               <div className="company-info">
-                                   主彩種，搭配市場熱門彩種，擁有几十種彩票種類。即時開獎數據、彩票資訊、統計及分析服務。不同於其他彩票平台，特別開發智慧主彩種，搭配市場熱門彩種，擁有几十種彩票種類。即時開獎數據、彩票資訊、統計及分析服務。不同於其他彩票平台，特別開發智慧
-                               </div>
+                       <div className="container bg3" >
+                           <Logo white={1} />
+                           <DownPage goNext={this.goNext} />
+                           <div className="content new-lottery-wrap">
+                               <div className="head-title"/>
+                               <p className="description">恒博彩票創新自主彩種，搭配市場熱門彩種，擁有几十種彩票種類。即時開獎數據、彩票資訊、統計及分析服務。不同於其他彩票平台，特別開發智慧操作、投注簡易的界面。</p>
+                               <img  className="new-lottery-img" src={lotteryImg} alt=""/>
                            </div>
                        </div>
                    </div>
                    <div style={this.state.size}>
-                       <div className="container bg3 new-lottery-wrap" id="page2">
+                       <div className="container bg4">
                            <Logo white={1} />
                            <DownPage goNext={this.goNext} />
-                           <div className="head-title head-title2"/>
-                           <p className="description">恒博 DC 彩票創新自主彩種，搭配市場熱門彩種，擁有几十種彩票種類。即時開獎數據、彩票資訊、統計及分析服務。不同於其他彩票平台，特別開發智慧操作、投注簡易的界面。</p>
-                           <img  className="new-lottery-img" src={lotteryImg} alt=""/>
-                       </div>
-                   </div>
-                   <div style={this.state.size}>
-                       <div className="container bg4 agency-wrap" id="page3">
-                           <Logo white={1} />
-                           <DownPage goNext={this.goNext} />
-                           <div className="head-title head-title3"/>
-                           <div className="agency">
+                           <div className="content agency-wrap">
+                               <div className="head-title "/>
                                <p className="description">您的佣金构成不仅来自于会员，更有代理进账返佣。根据业绩的高低，划分不同佣金比例和会员等级，您的自营越高，代理越多相对应
                                    的等级越高，返佣越多。<span>无限代理</span><span>无限封顶</span><span>共同助力</span><span>日日进账</span></p>
                                <img className="agency-img" src={agencyBg} alt="全名代理"/>
@@ -153,11 +144,12 @@ class App extends React.Component {
                        </div>
                    </div>
                    <div style={this.state.size}>
-                       <div className="container bg5 lottery-wrap" id="page4">
+                       <div className="container bg5">
                            <Logo white={1} />
                            <DownPage goNext={this.goNext} />
-                           <div className="head-title head-title4"/>
-                            <div className="lottery">
+                            <div className="content lottery-wrap">
+                                <div className="head-title"/>
+
                                 <p className="description">恒博 DC 彩票創新自主彩種，搭配市場熱門彩種，擁有几十種彩票種類。即時開獎數據、彩票資訊、統計及分析服務。不同於其他彩票平台，特別開發智慧操作、投注簡易的界面。</p>
                                 <img className="lottery-img" src={lotteryBg} alt="恒博新彩种"/>
                             </div>
@@ -165,11 +157,11 @@ class App extends React.Component {
                    </div>
                    {/* 电子游戏 */}
                    <div style={this.state.size}>
-                       <div className="container bg2 egame-wrap" id="page5">
+                       <div className="container bg2">
                            <Logo />
                            <DownPage type={2} goNext={this.goNext} />
-                           <div className="head-title head-title5"/>
-                           <div className="egame">
+                           <div className="content egame-wrap">
+                               <div className="head-title "/>
                                <p className="description">恒博游戏，市場最新，恒博娛樂與供應商間絕佳合作關係，特接入多超過数十款電子遊戲產品，包含人人喜歡刺激的千炮捕鱼、大满贯MW电子、斗地主以及森林舞会等項目；恒博娛樂憑借整合技術優勢，隨時保持鮮活趣味，提供玩家最佳互動體驗</p>
                                <img className="egame-bg" src={egameBg} alt="棋牌"/>
                            </div>
@@ -177,34 +169,47 @@ class App extends React.Component {
                    </div>
                    {/* 真人*/}
                    <div style={this.state.size}>
-                       <div className="container bg4 og-game-wrap" id="page6">
+                       <div className="container bg4 ">
                            <Logo white={1} />
                            <DownPage goNext={this.goNext} />
-                           <div className="head-title head-title6 "/>
-                            <div className="og-game">
+                            <div className="content og-game-wrap">
+                                <div className="head-title"/>
                                 <p className="og-game-description">恒博娱乐提供多款真人視訊遊戲平台，提供高清視頻流及無限遊戲玩法。超越業眾步調，接入知名品牌產品，集成东方集团旗下的OG视讯等款遊戲。憑藉我們的純熟快速的技術團隊，提供穩定性高、畫面清晰的播界面，讓玩家更即時精准，如同親臨現場娛樂場所。我們的優勢經驗，為各運營商提供最佳的解決方案，不論是單獨介接遊戲或是集成網站，都將超乎您所想像。
                                     <img className="og-game-bg2" src={ogBg2} alt=""/>
                                 </p>
-                                <img src={ogBg} alt=""/>
+                                <img className="og-game-bg"  src={ogBg} alt=""/>
                             </div>
                        </div>
                    </div>
                    <div style={this.state.size}>
-                       <div className="container bg3 chess-wrap" id="page7">
+                       <div className="container bg3 ">
                            <Logo white={1} />
                            <DownPage goNext={this.goNext} />
-                           <div className="head-title head-title7"/>
-                           <div className="chess">
+                           <div className="content chess-wrap">
+                               <div className="head-title"/>
                                <p className="description">恒博娛樂引进目前国际流行的棋牌游戏，包括开元棋牌。乐游 VG棋牌也将陆续开启，引领市场，给您不一样的绝佳体验。</p>
                                <img className="chess-bg" src={chessBg} alt="棋牌"/>
                            </div>
                        </div>
                    </div>
                    <div style={this.state.size}>
-                       <div className="container bg6 contact-wrap" id="page8">
+                       <div className="container bg2 ">
                            <Logo />
-                           <div className="head-title head-title8"/>
-                           <div className="contact">
+                           <DownPage type={2} goNext={this.goNext} />
+                           <div className="content company-wrap">
+                               <div className="head-title"/>
+                               <img width="535" src={companyBg} alt=""/>
+                               <div className="company-info">
+                                   恒博娱乐以丰富的研發力、專業的服務力、全面的策略力，為您開創新局、提升規模、整合策略、建立品牌，與我們合作將在商場上持續獲利、高枕無憂。作為一家亞洲實力的軟件公司，解決方案，平台規劃、活動規劃、市場營銷一應俱全，為現有系統商中最全局宏觀的策略顧問公司。恒博娱乐具備資深經驗及相關知識。與客戶之間持續成功、雙贏的合作關係，並確保提供最完美的在線娛樂。
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div style={this.state.size}>
+                       <div className="container bg6">
+                           <Logo />
+                           <div className="content contact-wrap">
+                               <div className="head-title"/>
                                <ul>
                                    <li>
                                        <img src={whatsappImg} alt=""/>

@@ -17,10 +17,7 @@ body,.body-wrap{
   right:0;
   bottom:0;
 }
-.container{
-  height: 100%;
-  overflow: hidden;
-}
+
 .bg1{
   background: url("./imgs/bg1.png")  top center no-repeat;
   background-size: 100%;
@@ -46,296 +43,281 @@ body,.body-wrap{
   background-size: 100%;
 }
 
-.logo{
-  float: left;
-  display: block;
-  position: absolute;
-  left: 0;
-  top:0;
-  margin:24px 0 0 66px
-}
-.down-page{
-  position: absolute;
-  left:50%;
-  bottom:30px;
-  margin: -29px;
-  width: 58px;
-  height: 70px;
-  background: url("./imgs/icon_arrows_white.png") no-repeat center center;
-  &.down-page-black{
-    background: url("./imgs/icon_arrows_black.png") no-repeat center center;
-  }
-  &:hover{
-    background-color: rgba(0,0,0,.2);
-  }
-}
-
-// 每页标题
-.head-title{
-  height: 68px;
-  margin: 100px auto 0;
-  position: relative;
-  &.head-title1{
-    width: 331px;
-    background: url("./imgs/title1.png") no-repeat;
-  }
-  &.head-title2{
-    width: 261px;
-    background: url("./imgs/title2.png") no-repeat;
-  }
-  &.head-title3{
-    width: 625px;
-    background: url("./imgs/title3.png") no-repeat;
-  }
-  &.head-title4{
-    width: 363px;
-    background: url("./imgs/title4.png") no-repeat;
-  }
-  &.head-title5{
-    width: 429px;
-    background: url("./imgs/title5.png") no-repeat;
-  }
-  &.head-title6{
-    width: 419px;
-    background: url("./imgs/title6.png") no-repeat;
-  }
-  &.head-title7{
-    width: 439px;
-    background: url("./imgs/title7.png") no-repeat;
-  }
-  &.head-title8{
-    width: 397px;
-    background: url("./imgs/title8.png") no-repeat;
-  }
-  &:before{
-    content:"";
-    position: absolute;
-    top: 24px;
-    left: -126px;
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
-    background-color: #D9D9D9;
-  }
-  &:after{
-    content:"";
-    position: absolute;
-    top: 34px;
-    left: -1126px;
-    width: 1000px;
-    height: 0;
-    border-top: 1px solid #A3A3A3;
-  }
-}
-.description{
-  text-align: center;
-  font-size:20px;
-  line-height: 34px;
-  color:#fff;
-  font-weight:400;
-}
-
-// 第一页 首页
-.home-wrap{
+.container{
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  .home{
-    width: 825px;
-    height: 400px;
-    .company-logo{
-      margin: 0 auto;
-      width: 628px;
-      height: 174px;
-      background: url("./imgs/company-logo.png") no-repeat;
+  .logo{
+    float: left;
+    display: block;
+    position: absolute;
+    left: 0;
+    top:0;
+    margin:24px 0 0 66px
+  }
+
+  .down-page{
+    position: absolute;
+    left:50%;
+    bottom:30px;
+    margin: -29px;
+    width: 58px;
+    height: 70px;
+    background: url("./imgs/icon_arrows_white.png") no-repeat center center;
+    &.down-page-black{
+      background: url("./imgs/icon_arrows_black.png") no-repeat center center;
     }
-    .company-about{
-      width: 420px;
-      height: 68px;
-      margin: 49px auto 0;
-      color:#fff;
-      border: 1px solid #fff;
-      font-size: 42px;
-      letter-spacing: 7px;
-      line-height: 68px;
-      text-align: center;
+    &:hover{
+      background-color: rgba(0,0,0,.2);
     }
-    .company-game{
-      ul{
-        margin-top: 75px;
-        display: flex;
-        justify-content: space-between;
-        li{
-          list-style: none;
-          padding:10px;
-          font-size: 36px;
-          color:#fff;
-          cursor:pointer;
-          &:hover{
-            background-color: rgba(0,0,0,.2);
+  }
+
+  // 每页标题
+  .head-title{
+    height: 68px;
+    margin: 0 auto 50px;
+    position: relative;
+    &:before{
+      content:"";
+      position: absolute;
+      top: 24px;
+      left: -126px;
+      width: 20px;
+      height: 20px;
+      border-radius: 20px;
+      background-color: #D9D9D9;
+    }
+    &:after{
+      content:"";
+      position: absolute;
+      top: 34px;
+      left: -1126px;
+      width: 1000px;
+      height: 0;
+      border-top: 1px solid #A3A3A3;
+    }
+  }
+
+  .description{
+    text-align: center;
+    font-size:20px;
+    line-height: 34px;
+    color:#fff;
+    font-weight:400;
+  }
+  .content{
+    width: 1200px;
+    // 第一页 首页
+    &.home-wrap{
+      width: 825px;
+      height: 400px;
+      .company-logo{
+        margin: 0 auto;
+        width: 628px;
+        height: 174px;
+        background: url("./imgs/company-logo.png") no-repeat;
+      }
+      .company-about{
+        width: 420px;
+        height: 68px;
+        margin: 49px auto 0;
+        color:#fff;
+        border: 1px solid #fff;
+        font-size: 42px;
+        letter-spacing: 7px;
+        line-height: 68px;
+        text-align: center;
+      }
+      .company-game{
+        ul{
+          margin-top: 75px;
+          display: flex;
+          justify-content: space-between;
+          li{
+            list-style: none;
+            padding:10px;
+            font-size: 36px;
+            color:#fff;
+            cursor:pointer;
+            &:hover{
+              background-color: rgba(0,0,0,.2);
+            }
           }
         }
       }
     }
-  }
 
-}
-
-//集团介绍
-.company-wrap{
-  .company{
-    width: 1110px;
-    margin: 70px auto 0;
-    >img{
-      float: left;
-      margin-right: 50px;
-    }
-    .company-info{
-      line-height: 36px;
-      font-size: 24px;
-      color:#333;
-    }
-  }
-}
-
-//第三页 创新彩种
-.new-lottery-wrap{
-  >.description{
-    margin: 70px auto 0;
-    width: 1000px;
-  }
-  .new-lottery-img{
-    display: block;
-    margin: 80px auto 0;
-  }
-}
-
-//第4页 全民代理
-.agency-wrap{
-  .agency{
-    >.description{
-      margin: 40px auto 0;
-      width: 1200px;
-      text-align: left;
-      span{
-        margin-right: 50px;
-        font-weight: bold;
+    // 创新彩种
+    &.new-lottery-wrap{
+      .head-title{
+        width: 331px;
+        background: url("./imgs/title2.png") no-repeat;
+      }
+      .new-lottery-img{
+        display: block;
+        margin: 80px auto 100px;
       }
     }
-    .agency-img{
-      display: block;
-      margin: 50px auto 0;
+
+    //全民代理
+    &.agency-wrap{
+      .head-title{
+        width: 625px;
+        background: url("./imgs/title3.png") no-repeat;
+      }
+      >.description{
+        margin: 40px auto 0;
+        width: 1200px;
+        text-align: left;
+        span{
+          margin-right: 50px;
+          font-weight: bold;
+        }
+      }
+      .agency-img{
+        display: block;
+        margin: 50px auto 0;
+      }
+    }
+
+    // 彩票
+    &.lottery-wrap{
+      .head-title{
+        width: 363px;
+        background: url("./imgs/title4.png") no-repeat;
+      }
+      >.description{
+        margin: 40px auto 0;
+        width: 1000px;
+        text-align: left;
+      }
+      .lottery-img{
+        display: block;
+        margin: 10px auto 0;
+      }
+    }
+    // 电子
+    &.egame-wrap{
+      .head-title{
+        width: 429px;
+        background: url("./imgs/title5.png") no-repeat;
+      }
+      >.description{
+        margin: 40px auto 0;
+        width: 1000px;
+        color:#333;
+      }
+      .egame-bg{
+        display: block;
+        margin: 10px auto 0;
+      }
+    }
+    // 真人
+    &.og-game-wrap{
+      .head-title{
+        width: 419px;
+        background: url("./imgs/title6.png") no-repeat;
+      }
+      .og-game-description{
+        float: left;
+        width: 584px;
+        font-size:20px;
+        line-height: 34px;
+        color:#fff;
+        font-weight:400;
+      }
+      .og-game-bg2{
+        display: block;
+        margin-top: 70px;
+      }
+      .og-game-bg{
+        display: block;
+        float: right;
+      }
+    }
+
+
+    // 棋牌
+    &.chess-wrap{
+      .head-title{
+        width: 439px;
+        background: url("./imgs/title7.png") no-repeat;
+      }
+      >.description{
+        color:#fff;
+      }
+      .chess-bg{
+        display: block;
+        margin: 10px auto 0;
+      }
+    }
+
+
+
+
+    //集团介绍
+    &.company-wrap{
+      .head-title{
+        width: 331px;
+        background: url("./imgs/title1.png") no-repeat;
+      }
+      >img{
+        float: left;
+        margin-right: 50px;
+      }
+      .company-info{
+        line-height: 36px;
+        font-size: 24px;
+        color:#333;
+      }
+    }
+
+    //联系我们
+    &.contact-wrap{
+      .head-title{
+        width: 397px;
+        background: url("./imgs/title8.png") no-repeat;
+      }
+      >ul{
+        display: flex;
+        justify-content: space-between;
+        width: 1060px;
+        margin: 0 auto;
+        >li{
+          width: 300px;
+          height: 360px;
+          background: #fff;
+          list-style: none;
+          box-shadow:5px 8px 30px 0px rgba(0, 0, 0, 0.2);
+          text-align: center;
+          letter-spacing: 0;
+          >img{
+            margin-top: 40px;
+            width: 154px;
+            height: 154px;
+          }
+          >h5{
+            margin-top: 20px;
+            font-size:24px;
+            line-height: 24px;
+          }
+          >p{
+            margin-top: 20px;
+            font-size:24px;
+            line-height: 34px;
+          }
+        }
+      }
+
     }
   }
 }
 
-//第5页 彩票
-.lottery-wrap{
-  .lottery{
-    >.description{
-      margin: 40px auto 0;
-      width: 1000px;
-      text-align: left;
-    }
-    .lottery-img{
-      display: block;
-      margin: 10px auto 0;
-    }
-  }
-}
-//第6页 棋牌
-.egame-wrap{
-  .egame{
-    >.description{
-      margin: 40px auto 0;
-      width: 1000px;
-      color:#333;
-
-    }
-    .egame-bg{
-      display: block;
-      margin: 10px auto 0;
-    }
-  }
-}
-//第7页 真人
-.og-game-wrap{
-  .og-game{
-    width: 1160px;
-    margin: 100px auto 0;
-    .og-game-description{
-      float: left;
-      width: 584px;
-      font-size:20px;
-      line-height: 34px;
-      color:#fff;
-      font-weight:400;
-    }
-    .og-game-bg2{
-      display: block;
-      margin-top: 70px;
-    }
-    .og-game-bg{
-      display: block;
-      float: right;
-    }
-  }
-}
 
 
-//第8页 棋牌
-.chess-wrap{
-  .chess{
-    >.description{
-      margin: 40px auto 0;
-      width: 1000px;
-      color:#fff;
-    }
-    .chess-bg{
-      display: block;
-      margin: 10px auto 0;
-    }
-  }
-}
 
 
-//第9页 联系我们
-.contact-wrap{
-  .contact{
-    margin-top: 180px;
-   >ul{
-     display: flex;
-     justify-content: space-between;
-     width: 1060px;
-     margin: 0 auto;
-     >li{
-       width: 300px;
-       height: 360px;
-       background: #fff;
-       list-style: none;
-       box-shadow:5px 8px 30px 0px rgba(0, 0, 0, 0.2);
-       text-align: center;
-       letter-spacing: 0;
-       >img{
-         margin-top: 40px;
-         width: 154px;
-         height: 154px;
-       }
-       >h5{
-         margin-top: 20px;
-         font-size:24px;
-         line-height: 24px;
-       }
-       >p{
-         margin-top: 20px;
-         font-size:24px;
-         line-height: 34px;
-       }
-     }
-   }
 
-  }
-}
 
 
