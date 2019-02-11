@@ -30,7 +30,7 @@ class App extends React.Component {
         this.goNext = this.goNext.bind(this)
         this.swiper = null
     }
-    setSize(){
+    setSize(){//设置尺寸
         this.setState({
             size: {
                 "width": document.body.offsetWidth + "px",
@@ -105,7 +105,7 @@ class App extends React.Component {
                            <Logo white={1} />
                            <DownPage goNext={this.goNext} />
                            <div className="content home-wrap">
-                               <div className="company-logo"></div>
+                               <div className="company-logo"/>
                                <div className="company-about">彩票包网提供商</div>
                                <div className="company-game">
                                    <ul>
