@@ -1,7 +1,7 @@
 {
-  "main.css": "/static/css/main.e2dbd5c1.chunk.css",
-  "main.js": "/static/js/main.d466a484.chunk.js",
-  "main.js.map": "/static/js/main.d466a484.chunk.js.map",
+  "main.css": "/static/css/main.bfbb6ec1.chunk.css",
+  "main.js": "/static/js/main.eb352101.chunk.js",
+  "main.js.map": "/static/js/main.eb352101.chunk.js.map",
   "static/css/1.9d445f59.chunk.css": "/static/css/1.9d445f59.chunk.css",
   "static/js/1.543a9392.chunk.js": "/static/js/1.543a9392.chunk.js",
   "static/js/1.543a9392.chunk.js.map": "/static/js/1.543a9392.chunk.js.map",
@@ -18,9 +18,9 @@
   "static/media/telegram.png": "/static/media/telegram.8be7f4f8.png",
   "static/media/whatsapp.png": "/static/media/whatsapp.604132fd.png",
   "static/media/company-bg.png": "/static/media/company-bg.f2a4d466.png",
-  "static/css/main.e2dbd5c1.chunk.css.map": "/static/css/main.e2dbd5c1.chunk.css.map",
+  "static/css/main.bfbb6ec1.chunk.css.map": "/static/css/main.bfbb6ec1.chunk.css.map",
   "static/css/1.9d445f59.chunk.css.map": "/static/css/1.9d445f59.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.90d5792ee6a0f827e07b80eb65fb7f36.js": "/precache-manifest.90d5792ee6a0f827e07b80eb65fb7f36.js",
+  "precache-manifest.71898ece033e818f644f365380f1f421.js": "/precache-manifest.71898ece033e818f644f365380f1f421.js",
   "service-worker.js": "/service-worker.js"
 }

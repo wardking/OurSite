@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/og-bg.d74924be.png"
   },
   {
-    "revision": "d466a48416278d24cd55",
-    "url": "/static/css/main.e2dbd5c1.chunk.css"
+    "revision": "eb352101772f078e66b1",
+    "url": "/static/css/main.bfbb6ec1.chunk.css"
   },
   {
     "revision": "0ad5cd449fb005a6d0d186e90b720b5d",
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/static/media/chess-bg.d79cf100.png"
   },
   {
-    "revision": "d466a48416278d24cd55",
-    "url": "/static/js/main.d466a484.chunk.js"
+    "revision": "eb352101772f078e66b1",
+    "url": "/static/js/main.eb352101.chunk.js"
   },
   {
     "revision": "53ad73f5e44214e98c196a32e0980f4d",
@@ -88,7 +88,7 @@ self.__precacheManifest = [
     "url": "/static/css/1.9d445f59.chunk.css"
   },
   {
-    "revision": "211eeac08ae460de5cca5e602e975d71",
+    "revision": "48c2da4f2dde989154312e788e09d02a",
     "url": "/index.html"
   }
 ];
