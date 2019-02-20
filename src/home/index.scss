@@ -404,6 +404,9 @@ body, .body-wrap {
           bottom: 20px;
           right: 34px;
         }
+        @media screen and (max-width: 320px){
+          display: none;
+        }
       }
       .og-game-bg {
         display: block;
@@ -412,6 +415,9 @@ body, .body-wrap {
           margin: 20px auto 0 auto;
           height: 200px;
           float: none;
+        }
+        @media screen and (max-width: 320px){
+          display: none;
         }
       }
     }
@@ -491,6 +497,11 @@ body, .body-wrap {
           text-align: left;
         }
       }
+      .company-img{
+        @media screen and (max-width: 320px) {
+          display: none;
+        }
+      }
     }
     //系统稳定
     &.system-wrap {
@@ -511,6 +522,14 @@ body, .body-wrap {
         margin-top: 50px;
         width: 100%;
         height: 477px;
+        .chartsWrap {
+          .charts5 {
+            display: none;
+          }
+          .charts6 {
+            display: none;
+          }
+        }
       }
       @media only screen and (max-width: 320px) {
         position: absolute;
@@ -781,6 +800,20 @@ body, .body-wrap {
             display: none;
           }
         }
+        @media screen and (max-width: 320px){
+          .charts5{
+            display: none;
+          }
+          .charts6{
+            display: none;
+          }
+          .charts7{
+            display: none;
+          }
+          .charts8{
+            display: none;
+          }
+        }
       }
     }
     //app介绍
@@ -791,7 +824,6 @@ body, .body-wrap {
       margin-left: -566px;
       margin-top: -430px;
       width: 1132px;
-      height: 810px;
       @media screen and (max-width: 1600px) {
         position: absolute;
         left: 60%;
@@ -799,7 +831,6 @@ body, .body-wrap {
         margin-left: -566px;
         margin-top: -430px;
         width: 1132px;
-        height: 810px;
       }
       @media screen and (max-width: 1000px) {
         position: absolute;
@@ -808,7 +839,6 @@ body, .body-wrap {
         margin-left: -566px;
         margin-top: -430px;
         width: 1132px;
-        height: 810px;
       }
       @media screen and (max-width: 600px) {
         position: absolute;
@@ -817,10 +847,15 @@ body, .body-wrap {
         margin-left: 0;
         margin-top: 50px;
         width: 100%;
-        height: 100%;
         .tipLists {
           display: block !important;
           div:nth-child(4){
+            display: none;
+          }
+          div:nth-child(5){
+            display: none;
+          }
+          div:nth-child(6){
             display: none;
           }
         }
@@ -907,7 +942,7 @@ body, .body-wrap {
         }
         @media only screen and (max-width: 600px) {
           width: 726px;
-          height: 267px;
+          height: 220px;
           margin: 0 auto;
           border-top: 1px solid #ececec;
         }
@@ -1016,7 +1051,7 @@ body, .body-wrap {
           @media screen and (max-width: 600px) {
             position: absolute;
             width: 650px;
-            left: calc(calc(50% - 302px));
+            left: calc(calc(50% - 280px));
           }
           .bigPicdata {
             display: block;
@@ -1031,7 +1066,7 @@ body, .body-wrap {
             }
             @media screen and (max-width: 600px) {
               display: block;
-              width: 240px;
+              width: 200px;
             }
           }
         }

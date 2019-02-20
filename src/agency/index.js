@@ -10,11 +10,7 @@ import agency03 from '../imgs/agencym03.png';
 import agency04 from '../imgs/agencym04.png';
 
 export default class Agency extends Component {
-
-
     render() {
-
-
         return (
             <div>
                 <div>

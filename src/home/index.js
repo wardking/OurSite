@@ -258,7 +258,7 @@ export default class Home extends React.Component {
                                 <div className="company-info">
                                     恒博娱乐以丰富的研发力、专业的服务力、全面的策略力，为您开创新局、提升规模、整合策略、建立品牌，与我们合作将在商场上持续获利、高枕无忧。作为一家亚洲实力的软件公司，解决方案，平台规划、活動规划、市场营销一应俱全，为现有系統商中最全局宏观的策略顾问公司。恒博娱乐具备资深经验及相关知识。与客户之间持续成功、双赢的合作关系，並确保提供最完美的在线娱乐。
                                 </div>
-                                <img width="535" src={companyBg} alt=""/>
+                                <img className='company-img' width="535" src={companyBg} alt=""/>
                             </div>
                         </div>
                     </div>

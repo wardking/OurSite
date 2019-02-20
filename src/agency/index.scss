@@ -138,6 +138,9 @@ body {
         @media screen and (max-width: 1600px) {
           height: 558px;
           background-image: url("../imgs/agency04.png");
+          img{
+            display: none;
+          }
         }
         @media screen and (max-width: 600px) {
           height: 100%;
