@@ -131,6 +131,7 @@ export default class Home extends React.Component {
     slideTo(index = 0) {
         if (this.swiper) this.swiper.slideTo(index);
     }
+
     render() {
         const params = {
             containerClass: "body-wrap",
@@ -150,9 +151,9 @@ export default class Home extends React.Component {
                             <Logo white={1}/>
                             <DownPage goNext={this.goNext}/>
                             <div className="content home-wrap">
-                                   <Link to='/agency'>
-                                       <div className="head-title"></div>
-                                   </Link>
+                                <Link to='/agency'>
+                                    <div className="head-title"></div>
+                                </Link>
                                 <div className="company-logo"/>
                                 <div className="company-about">彩票包网提供商</div>
                                 <div className="company-game">
@@ -188,8 +189,12 @@ export default class Home extends React.Component {
                                 <div className='lotteryCont'>
                                    <span className="description">您的佣金构成不仅来自于会员，更有代理进账返佣。根据业绩的高低，划分不同佣金比例和会员等级，您的自营越高，代理越多相对应
                                        的等级越高，返佣越多。</span>
-                                    <span className='desList'>无限代理</span><span className='desList'>无限封顶</span><span
-                                    className='desList'>共同助力</span><span className='desList'>日日进账</span>
+                                    <p>
+                                        <span className='desList'>无限代理</span>
+                                        <span className='desList'>无限封顶</span>
+                                        <span className='desList'>共同助力</span>
+                                        <span className='desList'>日日进账</span>
+                                    </p>
                                 </div>
                                 <img className="agency-img" src={agencyBg} alt="全名代理"/>
                             </div>
