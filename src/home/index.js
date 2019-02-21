@@ -419,8 +419,6 @@ export default class Home extends React.Component {
                                         <img src={whatsappImg} alt=""/>
                                         <h5>whatsApp</h5>
                                         <p>
-                                            恒博：+639273123456
-                                            <br/>
                                             大川：+639273123456
                                         </p>
                                     </li>
@@ -428,8 +426,7 @@ export default class Home extends React.Component {
                                         <img src={telegramImg} alt=""/>
                                         <h5>Telegram</h5>
                                         <p>
-                                            恒博：+639273123456
-                                            <br/>
+
                                             大川：+639273123456
                                         </p>
                                     </li>
@@ -437,8 +434,6 @@ export default class Home extends React.Component {
                                         <img src={phoneImg} alt=""/>
                                         <h5>Telephone</h5>
                                         <p>
-                                            恒博：+639273123456
-                                            <br/>
                                             大川：+639273123456
                                         </p>
                                     </li>
