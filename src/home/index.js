@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+//import ReactDOM from 'react-dom';
 import '../swiper.scss';
 import {Link} from 'react-router-dom';
 //https://daneden.github.io/animate.css/
@@ -303,7 +303,7 @@ export default class Home extends React.Component {
                                     </div>
                                     <div className='charts fl cha charts4'>
                                         <p className='p-img pi4'>
-                                            <img src={icon3} alt=""/>
+                                            <img src={icon4} alt=""/>
                                         </p>
                                         <p className='p-title'>会员推广</p>
                                         <p>
@@ -341,7 +341,7 @@ export default class Home extends React.Component {
                                     </div>
                                     <div className='charts fl cha charts8'>
                                         <p className='p-img pi8'>
-                                            <img src={icon7} alt=""/>
+                                            <img src={icon8} alt=""/>
                                         </p>
                                         <p className='p-title'>自带等级反水</p>
                                         <p>

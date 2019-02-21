@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import '../agency/index.scss';
-import Swiper from "react-id-swiper";
 import LogoWhite from "../imgs/logo_white.png";
 import LogoBlue from "../imgs/logo_blue.png";
 import * as serviceWorker from "../serviceWorker";
@@ -26,10 +25,10 @@ export default class Agency extends Component {
                                     <img src={agency02} alt=""/>
                                 </div>
                                 <div className='agency-img03'>
-                                    <img src={agency02} alt=""/>
+                                    <img src={agency03} alt=""/>
                                 </div>
                                 <div className='agency-img04'>
-                                    <img src={agency02} alt=""/>
+                                    <img src={agency04} alt=""/>
                                 </div>
                             </div>
                         </div>

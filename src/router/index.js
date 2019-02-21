@@ -1,4 +1,4 @@
-import React,{ Component } from 'react';
+import React from 'react';
 import { HashRouter,Switch,Route,Redirect} from 'react-router-dom';
 import Home from '../home/index';
 import Agency from '../agency/index';
