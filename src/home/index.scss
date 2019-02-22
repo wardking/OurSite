@@ -185,18 +185,43 @@ body, .body-wrap {
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: center;
+        @media screen and (max-width: 1600px) {
+          margin: 0 auto;
+          max-width: 628px;
+          width: 80%;
+          height: 174px;
+          background-image: url("../imgs/company-logo.png");
+          background-size: 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        @media screen and (max-width: 600px) {
+
+        }
       }
       .company-about {
         width: 80%;
         max-width: 420px;
         height: 68px;
-        margin: 49px auto 0;
+        margin: 10px auto 0;
         color: #fff;
         border: 1px solid #fff;
         font-size: 42px;
         letter-spacing: 7px;
         line-height: 68px;
         text-align: center;
+        @media screen and (max-width: 1600px) {
+          width: 80%;
+          max-width: 420px;
+          height: 68px;
+          margin: 10px auto 0;
+          color: #fff;
+          border: 1px solid #fff;
+          font-size: 42px;
+          letter-spacing: 7px;
+          line-height: 68px;
+          text-align: center;
+        }
         @media screen and (max-width: 600px) {
           margin: 10px auto 0;
           font-size: 20px;
@@ -204,9 +229,12 @@ body, .body-wrap {
       }
       .company-game {
         ul {
-          margin-top: 75px;
+          margin-top: 45px;
           display: flex;
           justify-content: space-between;
+          @media screen and (max-width: 1600px) {
+            margin: 50px auto 0;
+          }
           @media screen and (max-width: 600px) {
             margin: 50px auto 0;
           }
@@ -618,7 +646,7 @@ body, .body-wrap {
           text-align: center;
           font-size: 16px;
           color: #616161;
-          margin-top: 10px;
+          margin-top: 5px;
         }
         @media only screen and (max-width: 730px) {
           display: none;
@@ -667,7 +695,7 @@ body, .body-wrap {
         margin: 70px auto 0 auto;
         @media only screen and (max-width: 1600px) {
           width: 890px;
-          margin: 60px auto 0 auto;
+          margin: 55px auto 0 auto;
         }
         @media only screen and (max-width: 930px) {
           width: 100%;
@@ -1016,12 +1044,12 @@ body, .body-wrap {
           }
         }
         .si1sj {
-          left: 79px;
+          left: 150px;
           width: 328px;
           top: 53px;
           z-index: 3;
           @media only screen and (max-width: 1600px) {
-            left: 125px;
+            left: 187px;
             width: 328px;
             top: 50px;
             z-index: 3;
@@ -1037,12 +1065,12 @@ body, .body-wrap {
           }
         }
         .si2sj {
-          left: 35px;
+          left: 106px;
           width: 372px;
           top: 260px;
           z-index: 3;
           @media screen and (max-width: 1600px) {
-            left: 90px;
+            left: 148px;
             width: 372px;
             top: 260px;
             z-index: 3;
@@ -1058,8 +1086,10 @@ body, .body-wrap {
           }
         }
         .si3sj {
-          position: absolute;
-          left: calc(50% - 292px);
+          width: 470px;
+          margin: 0 auto;
+          position: relative;
+          left: 0;
           @media screen and (max-width: 1600px) {
             position: absolute;
             left: calc(50% - 295px);
@@ -1080,7 +1110,7 @@ body, .body-wrap {
             width: 520px;
             @media screen and (max-width: 1600px) {
               display: block;
-              width: 475px;
+              width: 90%;
             }
             @media screen and (max-width: 1000px) {
               display: block;
@@ -1093,7 +1123,7 @@ body, .body-wrap {
           }
         }
         .si4sj {
-          left: 750px;
+          left: 795px;
           width: 328px;
           top: -46px;
           z-index: 3;
@@ -1114,7 +1144,7 @@ body, .body-wrap {
           }
         }
         .si5sj {
-          left: 750px;
+          left: 795px;
           width: 370px;
           top: 117px;
           z-index: 3;
@@ -1135,7 +1165,7 @@ body, .body-wrap {
           }
         }
         .si6sj {
-          left: 750px;
+          left: 795px;
           width: 328px;
           top: 326px;
           z-index: 3;

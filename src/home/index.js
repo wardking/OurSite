@@ -277,7 +277,6 @@ export default class Home extends React.Component {
                             <DownPage type={2} goNext={this.goNext}/>
                             <div className="content system-wrap">
                                 <p className='weChange'>市场稳定，功能强大</p>
-                                <p className='weDefine'>把握市场脉动，抢先独占鳌头</p>
                                 <div className='lineBars clear'>
                                     <div className='bars'></div>
                                 </div>
