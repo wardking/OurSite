@@ -367,9 +367,6 @@ export default class Home extends React.Component {
                             <div className="content app-wrap">
                                 <p className='weChange'>纯原生APP,超乎想象的稳定流畅</p>
                                 <p className='weDefine'>移动端网页+原生APP客户端,让玩家随时随地畅快投注！</p>
-                                <div className='lineBars clear'>
-                                    <div className='bars'></div>
-                                </div>
                                 <div className='picExplain picShow0'>
                                     <div className='smollPicWrap si1sj'>
                                         <img className='picdata' src={si1sj} alt=""/>
