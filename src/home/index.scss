@@ -240,6 +240,7 @@ body, .body-wrap {
       .new-lottery-img {
         display: block;
         margin: 40px auto 0 auto;
+        width: 50%;
         /*margin: 80px auto 100px;*/
         @media screen and (max-width: 600px) {
           width: 90%;
@@ -254,7 +255,7 @@ body, .body-wrap {
         width: 625px;
         background-image: url("../imgs/title3.gif");
         @media screen and (max-width: 1600px) {
-          width: 90%;
+          width: 45%;
           margin: 20px auto 0 auto;
           background-size: 100%;
           background-position: center center;
@@ -296,7 +297,7 @@ body, .body-wrap {
         width: 100%;
         margin: 30px auto 0 auto;
         @media screen and (max-width: 1600px) {
-          width: 67%;
+          width: 47%;
           margin: 30px auto 0 auto;
         }
         @media screen and (max-width: 600px) {
@@ -334,7 +335,7 @@ body, .body-wrap {
         width: 100%;
         margin: 30px auto 0 auto;
         @media screen and (max-width: 1600px) {
-          width: 67%;
+          width: 46%;
           margin: 30px auto 0 auto;
         }
         @media screen and (max-width: 600px) {
@@ -372,7 +373,7 @@ body, .body-wrap {
         width: 100%;
         margin: 30px auto 0 auto;
         @media screen and (max-width: 1600px) {
-          width: 67%;
+          width: 48%;
           margin: 40px auto 0 auto;
         }
         @media screen and (max-width: 600px) {
@@ -418,7 +419,7 @@ body, .body-wrap {
       }
       .og-game-bg2 {
         display: block;
-        margin-top: 70px;
+        margin-top: 30px;
         @media screen and (max-width: 600px) {
           position: absolute;
           height: 45px;
@@ -433,6 +434,7 @@ body, .body-wrap {
       .og-game-bg {
         display: block;
         float: right;
+        width: 30%;
         @media screen and (max-width: 600px) {
           margin: 20px auto 0 auto;
           height: 200px;
@@ -470,7 +472,7 @@ body, .body-wrap {
         width: 100%;
         margin: 30px auto 0 auto;
         @media screen and (max-width: 1600px) {
-          width: 70%;
+          width: 47%;
           margin: 10px auto 0 auto;
         }
         @media screen and (max-width: 600px) {
@@ -610,7 +612,7 @@ body, .body-wrap {
         text-align: center;
         font-size: 16px;
         color: #616161;
-        margin-top: 10px;
+        margin-top: 5px;
         @media only screen and (max-width: 1600px) {
           width: 100%;
           text-align: center;
@@ -635,7 +637,7 @@ body, .body-wrap {
           height: 6px;
           background-color: #fa6200;
           margin: 0 auto;
-          margin-top: 14px;
+          margin-top: 10px;
           @media only screen and (max-width: 730px) {
             display: none;
           }
@@ -657,7 +659,7 @@ body, .body-wrap {
         padding-right: 60px;
         box-sizing: border-box;
         line-height: 20px;
-        margin-top: 10px;
+        margin-top: 5px;
         color: #616161;
       }
       .chartsWrap {
@@ -665,7 +667,7 @@ body, .body-wrap {
         margin: 70px auto 0 auto;
         @media only screen and (max-width: 1600px) {
           width: 890px;
-          margin: 70px auto 0 auto;
+          margin: 60px auto 0 auto;
         }
         @media only screen and (max-width: 930px) {
           width: 100%;
@@ -685,7 +687,7 @@ body, .body-wrap {
 
         .charts {
           width: 140px;
-          height: 150px;
+          height: 140px;
           border-radius: 16px;
           padding: 0 15px;
           box-shadow: 0 7px 15px #e0dede;
