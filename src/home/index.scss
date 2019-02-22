@@ -57,6 +57,7 @@ body, .body-wrap {
   background: url("../imgs/bg8.png") top center no-repeat;
   background-size: 100% 100%;
 }
+
 .bg9 {
   background: url("../imgs/bg2.png") top center no-repeat;
 }
@@ -165,7 +166,7 @@ body, .body-wrap {
     &.home-wrap {
       .head-title {
         width: 625px;
-        background-image: url("../imgs/title3.png");
+        background-image: url("../imgs/title3.gif");
         @media screen and (max-width: 600px) {
           width: 90%;
           margin: 20px auto 0 auto;
@@ -175,7 +176,6 @@ body, .body-wrap {
       }
       width: 100%;
       max-width: 825px;
-      height: 400px;
       .company-logo {
         margin: 0 auto;
         max-width: 628px;
@@ -239,7 +239,8 @@ body, .body-wrap {
       }
       .new-lottery-img {
         display: block;
-        margin: 80px auto 100px;
+        margin: 40px auto 0 auto;
+        /*margin: 80px auto 100px;*/
         @media screen and (max-width: 600px) {
           width: 90%;
           margin: 30px auto 0 auto;
@@ -251,7 +252,13 @@ body, .body-wrap {
     &.agency-wrap {
       .head-title {
         width: 625px;
-        background-image: url("../imgs/title3.png");
+        background-image: url("../imgs/title3.gif");
+        @media screen and (max-width: 1600px) {
+          width: 90%;
+          margin: 20px auto 0 auto;
+          background-size: 100%;
+          background-position: center center;
+        }
         @media screen and (max-width: 600px) {
           width: 90%;
           margin: 20px auto 0 auto;
@@ -286,9 +293,15 @@ body, .body-wrap {
       }
       .agency-img {
         display: block;
-        margin: 50px auto 0;
+        width: 100%;
+        margin: 30px auto 0 auto;
+        @media screen and (max-width: 1600px) {
+          width: 70%;
+          margin: 30px auto 0 auto;
+        }
         @media screen and (max-width: 600px) {
           width: 93%;
+          margin: 30px auto 0 auto;
         }
       }
     }
@@ -318,9 +331,15 @@ body, .body-wrap {
       }
       .lottery-img {
         display: block;
-        margin: 10px auto 0;
+        width: 100%;
+        margin: 30px auto 0 auto;
+        @media screen and (max-width: 1600px) {
+          width: 70%;
+          margin: 30px auto 0 auto;
+        }
         @media screen and (max-width: 600px) {
           width: 93%;
+          margin: 30px auto 0 auto;
         }
       }
     }
@@ -350,17 +369,21 @@ body, .body-wrap {
       }
       .egame-bg {
         display: block;
-        margin: 10px auto 0;
+        width: 100%;
+        margin: 30px auto 0 auto;
+        @media screen and (max-width: 1600px) {
+          width: 70%;
+          margin: 40px auto 0 auto;
+        }
         @media screen and (max-width: 600px) {
           width: 90%;
-
+          margin: 30px auto 0 auto;
         }
       }
     }
     // 真人
     &.og-game-wrap {
       @media screen and (max-width: 1600px) {
-        height: 810px;
       }
       @media screen and (max-width: 1000px) {
         height: 73%;
@@ -373,8 +396,7 @@ body, .body-wrap {
         background-image: url("../imgs/title6.png");
         @media screen and (max-width: 600px) {
           width: 55%;
-          margin: 0 auto;
-          background-size: 95%;
+          margin: 20px auto 0 auto;
           background-position: center center;
         }
       }
@@ -404,7 +426,7 @@ body, .body-wrap {
           bottom: 20px;
           right: 34px;
         }
-        @media screen and (max-width: 320px){
+        @media screen and (max-width: 320px) {
           display: none;
         }
       }
@@ -416,7 +438,7 @@ body, .body-wrap {
           height: 200px;
           float: none;
         }
-        @media screen and (max-width: 320px){
+        @media screen and (max-width: 320px) {
           display: none;
         }
       }
@@ -445,7 +467,12 @@ body, .body-wrap {
       }
       .chess-bg {
         display: block;
-        margin: 10px auto 0 auto;
+        width: 100%;
+        margin: 30px auto 0 auto;
+        @media screen and (max-width: 1600px) {
+          width: 70%;
+          margin: 10px auto 0 auto;
+        }
         @media screen and (max-width: 600px) {
           width: 90%;
         }
@@ -455,7 +482,7 @@ body, .body-wrap {
     //集团介绍
     &.company-wrap {
       @media screen and (max-width: 1600px) {
-        height: 680px;
+        height: 100%
       }
       @media screen and (max-width: 1000px) {
         height: 82%;
@@ -466,10 +493,13 @@ body, .body-wrap {
       .head-title {
         width: 331px;
         background-image: url("../imgs/title1.png");
+        @media screen and (max-width: 1600px) {
+          margin: 50px auto 0 auto;
+        }
         @media screen and (max-width: 600px) {
-          width: 50%;
+          height: 40px;
           margin: 0 auto;
-          background-size: 100%;
+          background-size: 50%;
           background-position: center center;
         }
       }
@@ -497,7 +527,7 @@ body, .body-wrap {
           text-align: left;
         }
       }
-      .company-img{
+      .company-img {
         @media screen and (max-width: 320px) {
           display: none;
         }
@@ -512,7 +542,7 @@ body, .body-wrap {
         margin-left: 0;
         margin-top: 50px;
         width: 100%;
-        height: 870px;
+        height: 100%;
       }
       @media only screen and (max-width: 600px) {
         position: absolute;
@@ -523,10 +553,13 @@ body, .body-wrap {
         width: 100%;
         height: 477px;
         .chartsWrap {
-          .charts5 {
+          .charts6 {
             display: none;
           }
-          .charts6 {
+          .charts7 {
+            display: none;
+          }
+          .charts8 {
             display: none;
           }
         }
@@ -573,6 +606,7 @@ body, .body-wrap {
         }
         @media only screen and (max-width: 730px) {
           font-size: 20px !important;
+          margin-top: 30px;
         }
       }
       .weDefine {
@@ -681,6 +715,7 @@ body, .body-wrap {
           }
           @media only screen and (max-width: 730px) {
             margin-bottom: 5px;
+            min-height: 74px;
           }
 
           p {
@@ -713,13 +748,8 @@ body, .body-wrap {
             }
             @media only screen and (max-width: 930px) {
               text-align: left !important;
-            }
-          }
-          @media only screen and (max-width: 1600px) {
-            .p-img {
-              text-align: center !important;
-              font-weight: 600;
-              line-height: 30px;
+              font-weight: bold;
+              font-size: 14px;
             }
           }
           .p-img {
@@ -728,6 +758,11 @@ body, .body-wrap {
             height: 50px !important;
             line-height: 76px !important;
             margin: -30px auto 10px auto;
+            @media only screen and (max-width: 1600px) {
+              text-align: center !important;
+              font-weight: 600;
+              line-height: 30px;
+            }
             &.pi1 {
               background: linear-gradient(#5cc9fa, #7481fa);
             }
@@ -790,27 +825,34 @@ body, .body-wrap {
             }
             @media only screen and (max-width: 930px) {
               position: absolute;
-              top: 38px;
+              top: 11px;
               padding: 0;
+              margin: 0;
             }
           }
         }
         @media screen and (max-width: 600px) {
-          .charts7{
+          .charts6 {
+            display: none;
+          }
+          .charts7 {
+            display: none;
+          }
+          .charts8 {
             display: none;
           }
         }
-        @media screen and (max-width: 320px){
-          .charts5{
+        @media screen and (max-width: 320px) {
+          .charts5 {
             display: none;
           }
-          .charts6{
+          .charts6 {
             display: none;
           }
-          .charts7{
+          .charts7 {
             display: none;
           }
-          .charts8{
+          .charts8 {
             display: none;
           }
         }
@@ -818,19 +860,9 @@ body, .body-wrap {
     }
     //app介绍
     &.app-wrap {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      margin-left: -566px;
-      margin-top: -430px;
-      width: 1132px;
+      position: relative;
+      height: 630px;
       @media screen and (max-width: 1600px) {
-        position: absolute;
-        left: 60%;
-        top: 50%;
-        margin-left: -566px;
-        margin-top: -430px;
-        width: 1132px;
       }
       @media screen and (max-width: 1000px) {
         position: absolute;
@@ -849,13 +881,13 @@ body, .body-wrap {
         width: 100%;
         .tipLists {
           display: block !important;
-          div:nth-child(4){
+          div:nth-child(4) {
             display: none;
           }
-          div:nth-child(5){
+          div:nth-child(5) {
             display: none;
           }
-          div:nth-child(6){
+          div:nth-child(6) {
             display: none;
           }
         }
@@ -885,6 +917,7 @@ body, .body-wrap {
         }
         @media only screen and (max-width: 730px) {
           font-size: 20px !important;
+          margin-top: 30px;
         }
       }
       .weDefine {
@@ -892,7 +925,7 @@ body, .body-wrap {
         text-align: center;
         font-size: 16px;
         color: #616161;
-        margin-top: 10px;
+        margin-top: 25px;
         @media only screen and (max-width: 1600px) {
           width: 100%;
           text-align: center;
@@ -934,27 +967,21 @@ body, .body-wrap {
         display: block;
       }
       .picExplain {
+        position: relative;
+        margin-top: 30px;
+        height: 550px;
         @media only screen and (max-width: 1600px) {
-          width: 726px;
           position: relative;
-          margin-top: 20px;
-          border-top: none;
+          height:530px;
         }
         @media only screen and (max-width: 600px) {
           width: 726px;
           height: 220px;
-          margin: 0 auto;
+          margin: 30px auto 0 auto;
           border-top: 1px solid #ececec;
         }
         .smollPicWrap {
           @media screen and (max-width: 1600px) {
-            width: 100px;
-            height: 209px;
-            font-size: 16px;
-            color: black;
-            line-height: 16px;
-            text-align: center;
-            margin-top: 75px;
           }
           @media screen and (max-width: 1000px) {
             width: 100px;
@@ -983,7 +1010,7 @@ body, .body-wrap {
           display: block;
           width: 100%;
           @media screen and (max-width: 1600px) {
-            width: 75%;
+            width: 85%;
           }
           @media screen and (max-width: 1000px) {
             width: 75%;
@@ -995,12 +1022,12 @@ body, .body-wrap {
         .si1sj {
           left: 79px;
           width: 328px;
-          top: 173px;
+          top: 53px;
           z-index: 3;
           @media only screen and (max-width: 1600px) {
-            left: -65px;
+            left: 95px;
             width: 328px;
-            top: 114px;
+            top: 50px;
             z-index: 3;
           }
           @media screen and (max-width: 1000px) {
@@ -1016,12 +1043,12 @@ body, .body-wrap {
         .si2sj {
           left: 35px;
           width: 372px;
-          top: 463px;
+          top: 260px;
           z-index: 3;
           @media screen and (max-width: 1600px) {
-            left: -103px;
+            left: 55px;
             width: 372px;
-            top: 351px;
+            top: 260px;
             z-index: 3;
           }
           @media screen and (max-width: 1000px) {
@@ -1036,12 +1063,10 @@ body, .body-wrap {
         }
         .si3sj {
           position: absolute;
-          width: 344px;
-          left: calc(50% - 340px);
+          left: calc(50% - 292px);
           @media screen and (max-width: 1600px) {
             position: absolute;
-            width: 344px;
-            left: calc(50% - 340px);
+            left: calc(50% - 295px);
           }
           @media screen and (max-width: 1000px) {
             position: absolute;
@@ -1051,14 +1076,14 @@ body, .body-wrap {
           @media screen and (max-width: 600px) {
             position: absolute;
             width: 650px;
-            left: calc(calc(50% - 280px));
+            left: calc(calc(50% - 264px));
           }
           .bigPicdata {
             display: block;
-            width: 680px;
+            width: 520px;
             @media screen and (max-width: 1600px) {
               display: block;
-              width: 650px;
+              width: 475px;
             }
             @media screen and (max-width: 1000px) {
               display: block;
@@ -1073,12 +1098,12 @@ body, .body-wrap {
         .si4sj {
           left: 750px;
           width: 328px;
-          top: 90px;
+          top: -46px;
           z-index: 3;
           @media screen and (max-width: 1600px) {
-            left: 537px;
+            left: 665px;
             width: 328px;
-            top: -70px;
+            top: -50px;
             z-index: 3;
           }
           @media screen and (max-width: 1000px) {
@@ -1094,12 +1119,12 @@ body, .body-wrap {
         .si5sj {
           left: 750px;
           width: 370px;
-          top: 270px;
+          top: 117px;
           z-index: 3;
           @media only screen and (max-width: 1600px) {
-            left: 537px;
+            left: 665px;
             width: 370px;
-            top: 110px;
+            top: 115px;
             z-index: 3;
           }
           @media screen and (max-width: 1000px) {
@@ -1115,12 +1140,12 @@ body, .body-wrap {
         .si6sj {
           left: 750px;
           width: 328px;
-          top: 500px;
+          top: 326px;
           z-index: 3;
           @media only screen and (max-width: 1600px) {
-            left: 537px;
+            left: 665px;
             width: 328px;
-            top: 360px;
+            top: 330px;
             z-index: 3;
           }
           @media screen and (max-width: 1000px) {
@@ -1151,8 +1176,8 @@ body, .body-wrap {
           .tips-title {
             font-weight: 600;
             .tips-ico {
-              font-size: 36px;
-              line-height: 30px;
+              font-size: 30px;
+              line-height: 15px;
               vertical-align: middle;
               font-style: normal;
             }
@@ -1263,7 +1288,7 @@ body, .body-wrap {
               float: left;
               text-align: left;
               font-size: 16px;
-              margin-top: 20px;
+              margin-top: 5px;
               margin-left: 5%;
               line-height: 24px;
             }
@@ -1284,11 +1309,11 @@ body, .body-wrap {
           background-position: center center;
         }
       }
-      .agency-title{
+      .agency-title {
         color: #616161;
         font-size: 16px;
       }
-      .agency-img{
+      .agency-img {
         width: 100%;
         height: 100%;
         margin: 0 auto;

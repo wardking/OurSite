@@ -69,33 +69,33 @@ export default class Home extends React.Component {
     }
 
     pageChange(index = 0) {//翻页之后 动画
-        console.log(index)
         switch (index) {
             case 1:
+                animateCss('.company-wrap .head-title', 'bounceInLeft');
+                animateCss('.agency-img', 'pulse');
+                break;
+            case 2:
                 animateCss('.new-lottery-wrap .head-title', 'bounceInLeft');
                 animateCss('.new-lottery-img', 'pulse');
                 break;
-            case 2:
+            case 3:
                 animateCss('.agency-wrap .head-title', 'bounceInLeft');
                 animateCss('.agency-img', 'pulse');
                 break;
-            case 3:
+            case 4:
                 animateCss('.lottery-wrap .head-title', 'bounceInLeft');
                 animateCss('.lottery-img', 'pulse');
                 break;
-            case 4:
+            case 5:
                 animateCss('.egame-wrap .head-title', 'bounceInLeft');
                 animateCss('.egame-bg', 'pulse');
                 break;
-            case 5:
+            case 6:
                 animateCss('.og-game-wrap .head-title', 'bounceInLeft');
                 break;
-            case 6:
+            case 7:
                 animateCss('.chess-wrap .head-title', 'bounceInLeft');
                 animateCss('.chess-bg', 'pulse');
-                break;
-            case 7:
-                animateCss('.company-wrap .head-title', 'bounceInLeft');
                 break;
             case 8:
                 for (let i = 1; i < 9; ++i) {
@@ -146,6 +146,7 @@ export default class Home extends React.Component {
                 <Swiper {...params} ref={node => {
                     if (node) this.swiper = node.swiper
                 }}>
+                    {/*首页*/}
                     <div style={this.state.size}>
                         <div className="container bg1">
                             <Logo white={1}/>
@@ -167,6 +168,20 @@ export default class Home extends React.Component {
                             </div>
                         </div>
                     </div>
+                    {/*集团介绍*/}
+                    <div style={this.state.size}>
+                        <div className="container bg2 ">
+                            <Logo/>
+                            <DownPage type={2} goNext={this.goNext}/>
+                            <div className="content company-wrap">
+                                <div className="head-title"/>
+                                <div className="company-info">
+                                    恒博娱乐以丰富的研发力、专业的服务力、全面的策略力，为您开创新局、提升规模、整合策略、建立品牌，与我们合作将在商场上持续获利、高枕无忧。作为一家亚洲实力的软件公司，解决方案，平台规划、活動规划、市场营销一应俱全，为现有系統商中最全局宏观的策略顾问公司。恒博娱乐具备资深经验及相关知识。与客户之间持续成功、双赢的合作关系，並确保提供最完美的在线娱乐。
+                                </div>
+                                <img className='company-img' width="535" src={companyBg} alt=""/>
+                            </div>
+                        </div>
+                    </div>
                     {/*创新彩种*/}
                     <div style={this.state.size}>
                         <div className="container bg3">
@@ -185,7 +200,9 @@ export default class Home extends React.Component {
                             <Logo white={1}/>
                             <DownPage goNext={this.goNext}/>
                             <div className="content agency-wrap">
-                                <div className="head-title "/>
+                                <Link to='/agency'>
+                                    <div className="head-title"></div>
+                                </Link>
                                 <div className='lotteryCont'>
                                    <span className="description">您的佣金构成不仅来自于会员，更有代理进账返佣。根据业绩的高低，划分不同佣金比例和会员等级，您的自营越高，代理越多相对应
                                        的等级越高，返佣越多。</span>
@@ -250,20 +267,6 @@ export default class Home extends React.Component {
                                 <div className="head-title"/>
                                 <p className="description">恒博娱乐引进目前国际流行的棋牌游戏，包括开元棋牌。乐游 VG棋牌也将陆续开启，引领市场，给您不一样的绝佳体验。</p>
                                 <img className="chess-bg" src={chessBg} alt="棋牌"/>
-                            </div>
-                        </div>
-                    </div>
-                    {/*集团介绍*/}
-                    <div style={this.state.size}>
-                        <div className="container bg2 ">
-                            <Logo/>
-                            <DownPage type={2} goNext={this.goNext}/>
-                            <div className="content company-wrap">
-                                <div className="head-title"/>
-                                <div className="company-info">
-                                    恒博娱乐以丰富的研发力、专业的服务力、全面的策略力，为您开创新局、提升规模、整合策略、建立品牌，与我们合作将在商场上持续获利、高枕无忧。作为一家亚洲实力的软件公司，解决方案，平台规划、活動规划、市场营销一应俱全，为现有系統商中最全局宏观的策略顾问公司。恒博娱乐具备资深经验及相关知识。与客户之间持续成功、双赢的合作关系，並确保提供最完美的在线娱乐。
-                                </div>
-                                <img className='company-img' width="535" src={companyBg} alt=""/>
                             </div>
                         </div>
                     </div>
@@ -424,6 +427,7 @@ export default class Home extends React.Component {
                                         <img src={whatsappImg} alt=""/>
                                         <h5>whatsApp</h5>
                                         <p>
+                                            恒博：+639771123456<br/>
                                             大川：+639273123456
                                         </p>
                                     </li>
@@ -431,7 +435,7 @@ export default class Home extends React.Component {
                                         <img src={telegramImg} alt=""/>
                                         <h5>Telegram</h5>
                                         <p>
-
+                                            恒博：+639771123456<br/>
                                             大川：+639273123456
                                         </p>
                                     </li>
@@ -439,6 +443,7 @@ export default class Home extends React.Component {
                                         <img src={phoneImg} alt=""/>
                                         <h5>Telephone</h5>
                                         <p>
+                                            恒博：+639771123456<br/>
                                             大川：+639273123456
                                         </p>
                                     </li>
