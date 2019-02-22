@@ -167,6 +167,13 @@ body, .body-wrap {
       .head-title {
         width: 625px;
         background-image: url("../imgs/title3.gif");
+        @media screen and (max-width: 1600px) {
+          width: 60%;
+          margin: 20px auto 0 auto;
+          background-size: 100%;
+          background-position: center center;
+          left: 167px;
+        }
         @media screen and (max-width: 600px) {
           width: 90%;
           margin: 20px auto 0 auto;
@@ -283,10 +290,11 @@ body, .body-wrap {
         width: 625px;
         background-image: url("../imgs/title3.gif");
         @media screen and (max-width: 1600px) {
-          width: 45%;
+          width: 60%;
           margin: 20px auto 0 auto;
           background-size: 100%;
           background-position: center center;
+          left: 167px;
         }
         @media screen and (max-width: 600px) {
           width: 90%;
