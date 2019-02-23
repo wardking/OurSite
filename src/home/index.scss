@@ -121,7 +121,7 @@ body, .body-wrap {
     &:before {
       content: "";
       position: absolute;
-      top: 24px;
+      top: 32px;
       left: -126px;
       width: 20px;
       height: 20px;
@@ -134,7 +134,7 @@ body, .body-wrap {
     &:after {
       content: "";
       position: absolute;
-      top: 34px;
+      top: 41px;
       left: -1126px;
       width: 1000px;
       height: 0;
@@ -165,18 +165,18 @@ body, .body-wrap {
     // 第一页 首页
     &.home-wrap {
       .head-title {
-        width: 625px;
-        background-image: url("../imgs/title3.gif");
+        max-width: 1000px;
+        background-image: url("../imgs/title3.gif") ;
+        background-size: 100%;
+        background-position: center center;
         @media screen and (max-width: 1600px) {
-          width: 95%;
-          margin: 20px auto 0 auto;
+          margin: 20px auto 0;
           background-size: 100%;
           background-position: center center;
-          left: 150px;
         }
         @media screen and (max-width: 600px) {
-          width: 90%;
-          margin: 20px auto 0 auto;
+          margin: 20px auto 0;
+          height: 50px;
           background-size: 100%;
           background-position: center center;
         }
@@ -306,7 +306,7 @@ body, .body-wrap {
       .lotteryCont {
         > .description {
           margin: 40px auto 0;
-          width: 1200px;
+          max-width: 1200px;
           text-align: left;
           @media screen and (max-width: 600px) {
             display: block;
@@ -357,7 +357,7 @@ body, .body-wrap {
       }
       > .description {
         margin: 40px auto 0;
-        width: 1000px;
+        max-width: 1000px;
         text-align: left;
         @media screen and (max-width: 600px) {
           width: 92%;
@@ -394,7 +394,7 @@ body, .body-wrap {
       }
       > .description {
         margin: 40px auto 0;
-        width: 1000px;
+        max-width: 1000px;
         color: #333;
         @media screen and (max-width: 600px) {
           width: 92%;
@@ -439,7 +439,7 @@ body, .body-wrap {
       }
       .og-game-description {
         float: left;
-        width: 584px;
+        max-width: 584px;
         font-size: 20px;
         line-height: 34px;
         color: #fff;
@@ -557,9 +557,11 @@ body, .body-wrap {
         line-height: 36px;
         font-size: 24px;
         color: #333;
-        @media screen and (max-width: 600px) {
-          width: 92%;
-          margin: 20px auto 0 auto;
+
+        @media screen and (max-width: 1300px) {
+          float: none;
+          width: 90%;
+          margin: 20px auto ;
           font-size: 15px;
           line-height: 20px;
           text-align: left;
