@@ -6,8 +6,9 @@ const PageRoute =()=>(<HashRouter>
    <div>
        <Switch>
            <Route path='/home' component={Home}></Route>
+           <Route path='/agency/:index' component={Agency}></Route>
            <Route path='/agency' component={Agency}></Route>
-           <Redirect exact path="/" to="/home"/>
+           <Redirect path="/" to="/home"/>
        </Switch>
    </div>
 </HashRouter>)

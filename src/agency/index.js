@@ -9,6 +9,12 @@ import agency03 from '../imgs/agencym03.png';
 import agency04 from '../imgs/agencym04.png';
 
 export default class Agency extends Component {
+    componentDidMount(){
+        let params = this.props.match.params;
+        if(params&&params.index){
+            sessionStorage.setItem("index",params.index);
+        }
+    }
     render() {
         return (
             <div>

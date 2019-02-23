@@ -65,7 +65,11 @@ export default class Home extends React.Component {
         this.swiper.on('slideChange', () => {
             this.pageChange(this.swiper.realIndex)
         });
-        this.slideTo(0)
+        let index = 0;
+        if(sessionStorage.getItem("index")){
+          index = Number(sessionStorage.getItem("index"));
+        }
+        this.slideTo(index)
     }
 
     pageChange(index = 0) {//翻页之后 动画
@@ -152,7 +156,7 @@ export default class Home extends React.Component {
                             <Logo white={1}/>
                             <DownPage goNext={this.goNext}/>
                             <div className="content home-wrap">
-                                <Link to='/agency'>
+                                <Link to='/agency/0' >
                                     <div className="head-title"></div>
                                 </Link>
                                 <div className="company-logo"/>
@@ -200,7 +204,7 @@ export default class Home extends React.Component {
                             <Logo white={1}/>
                             <DownPage goNext={this.goNext}/>
                             <div className="content agency-wrap">
-                                <Link to='/agency'>
+                                <Link to='/agency/3'>
                                     <div className="head-title"></div>
                                 </Link>
                                 <div className='lotteryCont'>
