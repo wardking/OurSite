@@ -1,7 +1,7 @@
 {
   "main.css": "/static/css/main.b35250f0.chunk.css",
-  "main.js": "/static/js/main.6df9be1f.chunk.js",
-  "main.js.map": "/static/js/main.6df9be1f.chunk.js.map",
+  "main.js": "/static/js/main.9b06bfaa.chunk.js",
+  "main.js.map": "/static/js/main.9b06bfaa.chunk.js.map",
   "static/css/1.fc01cd7c.chunk.css": "/static/css/1.fc01cd7c.chunk.css",
   "static/js/1.ce17d845.chunk.js": "/static/js/1.ce17d845.chunk.js",
   "static/js/1.ce17d845.chunk.js.map": "/static/js/1.ce17d845.chunk.js.map",
@@ -9,7 +9,7 @@
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
   "static/media/index.scss": "/static/media/agency02.7cff8230.png",
   "static/media/lottery.png": "/static/media/lottery.6d2e36c0.png",
-  "static/media/agency-bg.png": "/static/media/agency-bg.89626fa0.png",
+  "static/media/agency-bg.png": "/static/media/agency-bg.4bb35318.png",
   "static/media/lottery-bg.png": "/static/media/lottery-bg.47af58cc.png",
   "static/media/egame-bg.png": "/static/media/egame-bg.6f214f8c.png",
   "static/media/chess-bg.png": "/static/media/chess-bg.d79cf100.png",
@@ -26,6 +26,6 @@
   "static/css/main.b35250f0.chunk.css.map": "/static/css/main.b35250f0.chunk.css.map",
   "static/css/1.fc01cd7c.chunk.css.map": "/static/css/1.fc01cd7c.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.176f313a7faa0cf6a20fa6aa8dedf3da.js": "/precache-manifest.176f313a7faa0cf6a20fa6aa8dedf3da.js",
+  "precache-manifest.0663651b82b3d1d81ccdfc59cc3fc4ad.js": "/precache-manifest.0663651b82b3d1d81ccdfc59cc3fc4ad.js",
   "service-worker.js": "/service-worker.js"
 }
