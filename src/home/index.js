@@ -208,8 +208,7 @@ export default class Home extends React.Component {
                                     <div className="head-title"></div>
                                 </Link>
                                 <div className='lotteryCont'>
-                                   <span className="description">您的佣金构成不仅来自于会员，更有代理进账返佣。根据业绩的高低，划分不同佣金比例和会员等级，您的自营越高，代理越多相对应
-                                       的等级越高，返佣越多。</span>
+                                   <span className="description">您的佣金构成不仅来自于您自己，更有代理进账返佣。根据业绩的高低，划分不同佣金比例和代理等级，您的自营越高，代理越多相对应的等级越高，返佣越多。</span>
                                     <p>
                                         <span className='desList'>无限代理</span>
                                         <span className='desList'>无限封顶</span>
