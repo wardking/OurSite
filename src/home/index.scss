@@ -253,6 +253,10 @@ body, .body-wrap {
           }
           @media screen and (max-width: 600px) {
             margin: 50px auto 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
           }
           li {
             list-style: none;
@@ -282,8 +286,10 @@ body, .body-wrap {
               cursor: pointer;
             }
             @media screen and (max-width: 600px) {
-              padding: 10px 5px;
-              font-size: 14px;
+              width: 33.3%;
+              font-size: 18px;
+              padding: 0;
+              line-height: 28px;
             }
             &:hover {
               background-color: rgba(0, 0, 0, .2);
