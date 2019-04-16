@@ -117,6 +117,7 @@ body, .body-wrap {
     position: relative;
     background-size: 100%;
     background-repeat: no-repeat;
+    background-position: center center;
 
     &:before {
       content: "";
@@ -166,7 +167,7 @@ body, .body-wrap {
     &.home-wrap {
       .head-title {
         max-width: 1000px;
-        background-image: url("../imgs/title3.gif") ;
+        background-image: url("../imgs/title3.gif");
         background-size: 100%;
         background-position: center center;
         @media screen and (max-width: 1600px) {
@@ -344,6 +345,44 @@ body, .body-wrap {
       }
     }
 
+    //聊天室
+    &.chat-wrap {
+      .head-title {
+        width: 363px;
+        background-image: url("../imgs/title10.png");
+        @media screen and (max-width: 600px) {
+          width: 50%;
+          margin: 0 auto;
+          background-size: 100%;
+          background-position: center center;
+        }
+      }
+      > .description {
+        margin: 40px auto 0;
+        max-width: 1000px;
+        text-align: left;
+        @media screen and (max-width: 600px) {
+          width: 92%;
+          margin: 0 auto;
+          font-size: 16px;
+          text-align: left;
+        }
+      }
+      .chat-img {
+        display: block;
+        width: 100%;
+        margin: 30px auto 0 auto;
+        @media screen and (max-width: 1600px) {
+          width: 46%;
+          margin: 30px auto 0 auto;
+        }
+        @media screen and (max-width: 600px) {
+          width: 93%;
+          margin: 30px auto 0 auto;
+        }
+      }
+    }
+
     // 彩票
     &.lottery-wrap {
       .head-title {
@@ -473,8 +512,8 @@ body, .body-wrap {
         float: right;
         width: 30%;
         @media screen and (max-width: 600px) {
-          margin: 20px auto 0 auto;
-          height: 200px;
+          margin: 60px auto 0 auto;
+          /*height: 200px;*/
           float: none;
         }
         @media screen and (max-width: 320px) {
@@ -562,7 +601,7 @@ body, .body-wrap {
         @media screen and (max-width: 1300px) {
           float: none;
           width: 90%;
-          margin: 20px auto ;
+          margin: 20px auto;
           font-size: 15px;
           line-height: 20px;
           text-align: left;
@@ -1092,7 +1131,7 @@ body, .body-wrap {
             left: 0;
           }
           @media screen and (max-width: 600px) {
-            width: 200px!important;
+            width: 200px !important;
             margin: 0 auto !important;
             position: relative;
             left: 0;

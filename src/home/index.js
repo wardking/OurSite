@@ -20,6 +20,7 @@ import ogBg2 from "../imgs/og-bg2.png";
 import phoneImg from "../imgs/phone.png";
 import telegramImg from "../imgs/telegram.png";
 import whatsappImg from "../imgs/whatsapp.png";
+import chatImg from "../imgs/chat-bg.png";
 import icon1 from '../imgs/s2-ico1.png';
 import icon2 from '../imgs/s2-ico2.png';
 import icon3 from '../imgs/s2-ico3.png';
@@ -66,8 +67,8 @@ export default class Home extends React.Component {
             this.pageChange(this.swiper.realIndex)
         });
         let index = 0;
-        if(sessionStorage.getItem("index")){
-          index = Number(sessionStorage.getItem("index"));
+        if (sessionStorage.getItem("index")) {
+            index = Number(sessionStorage.getItem("index"));
         }
         this.slideTo(index)
     }
@@ -87,35 +88,39 @@ export default class Home extends React.Component {
                 animateCss('.agency-img', 'pulse');
                 break;
             case 4:
+                animateCss('.chat-wrap .head-title', 'bounceInLeft');
+                animateCss('.chat-img', 'pulse');
+                break;
+            case 5:
                 animateCss('.lottery-wrap .head-title', 'bounceInLeft');
                 animateCss('.lottery-img', 'pulse');
                 break;
-            case 5:
+            case 6:
                 animateCss('.egame-wrap .head-title', 'bounceInLeft');
                 animateCss('.egame-bg', 'pulse');
                 break;
-            case 6:
+            case 7:
                 animateCss('.og-game-wrap .head-title', 'bounceInLeft');
                 break;
-            case 7:
+            case 8:
                 animateCss('.chess-wrap .head-title', 'bounceInLeft');
                 animateCss('.chess-bg', 'pulse');
                 break;
-            case 8:
+            case 9:
                 for (let i = 1; i < 9; ++i) {
                     setTimeout(() => {
                         animateCss('.charts' + i, 'heartBeat');
                     }, i * 300);
                 }
                 break;
-            case 9:
+            case 10:
                 animateCss('.si1sj', 'fadeInLeft');
                 animateCss('.si2sj', 'fadeInLeft');
                 animateCss('.si4sj', 'fadeInRight');
                 animateCss('.si5sj', 'fadeInRight');
                 animateCss('.si6sj', 'fadeInRight');
                 break;
-            case 10:
+            case 11:
                 animateCss('.contact-wrap .head-title', 'bounceInLeft');
                 break;
             case 0:
@@ -156,7 +161,7 @@ export default class Home extends React.Component {
                             <Logo white={1}/>
                             <DownPage goNext={this.goNext}/>
                             <div className="content home-wrap">
-                                <Link to='/agency/0' >
+                                <Link to='/agency/0'>
                                     <div className="head-title"></div>
                                 </Link>
                                 <div className="company-logo"/>
@@ -208,7 +213,8 @@ export default class Home extends React.Component {
                                     <div className="head-title"></div>
                                 </Link>
                                 <div className='lotteryCont'>
-                                   <span className="description">您的佣金构成不仅来自于您自己，更有代理进账返佣。根据业绩的高低，划分不同佣金比例和代理等级，您的自营越高，代理越多相对应的等级越高，返佣越多。</span>
+                                    <span
+                                        className="description">您的佣金构成不仅来自于您自己，更有代理进账返佣。根据业绩的高低，划分不同佣金比例和代理等级，您的自营越高，代理越多相对应的等级越高，返佣越多。</span>
                                     <p>
                                         <span className='desList'>无限代理</span>
                                         <span className='desList'>无限封顶</span>
@@ -219,6 +225,20 @@ export default class Home extends React.Component {
                                 <img className="agency-img" src={agencyBg} alt="全名代理"/>
                             </div>
 
+                        </div>
+                    </div>
+                    {/*聊天室*/}
+                    <div style={this.state.size}>
+                        <div className="container bg3">
+                            <Logo white={1}/>
+                            <DownPage goNext={this.goNext}/>
+                            <div className="content chat-wrap">
+                                <div className="head-title"/>
+
+                                <p className="description">最新聊天室，不仅支持流畅聊天，还有发红包、分享注单以及快捷投注功能和优势，更能第一时间获取最新热门投注资讯，让您的游戏
+                                    更加温暖。</p>
+                                <img className="chat-img" src={chatImg} alt="恒博新彩种"/>
+                            </div>
                         </div>
                     </div>
                     {/*DC彩票*/}
