@@ -165,6 +165,16 @@ body, .body-wrap {
     width: 100%;
     // 第一页 首页
     &.home-wrap {
+      width: 100%;
+      max-width: 1020px;
+      @media screen and (max-width: 1600px) {
+        width: 100%;
+        max-width: 1020px;
+      }
+      @media screen and (max-width: 1300px) {
+        width: 100%;
+        max-width: 825px;
+      }
       .head-title {
         max-width: 1000px;
         background-image: url("../imgs/title3.gif");
@@ -182,8 +192,6 @@ body, .body-wrap {
           background-position: center center;
         }
       }
-      width: 100%;
-      max-width: 1020px;
       .company-logo {
         margin: 0 auto;
         max-width: 628px;
@@ -252,6 +260,27 @@ body, .body-wrap {
             font-size: 36px;
             color: #fff;
             cursor: pointer;
+            @media screen and (max-width: 1600px) {
+              list-style: none;
+              padding: 10px;
+              font-size: 36px;
+              color: #fff;
+              cursor: pointer;
+            }
+            @media screen and (max-width: 1300px) {
+              list-style: none;
+              padding: 10px 5px;
+              font-size: 27px;
+              color: #fff;
+              cursor: pointer;
+            }
+            @media screen and (max-width: 1000px) {
+              list-style: none;
+              padding: 10px 5px;
+              font-size: 25px;
+              color: #fff;
+              cursor: pointer;
+            }
             @media screen and (max-width: 600px) {
               padding: 10px 5px;
               font-size: 14px;
@@ -960,7 +989,7 @@ body, .body-wrap {
         left: 64%;
         top: 12%;
         margin-left: -566px;
-       /* margin-top: -430px;*/
+        /* margin-top: -430px;*/
         width: 1132px;
       }
       @media screen and (max-width: 600px) {
