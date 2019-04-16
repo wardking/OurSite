@@ -168,10 +168,12 @@ export default class Home extends React.Component {
                                 <div className="company-about">彩票包网提供商</div>
                                 <div className="company-game">
                                     <ul>
-                                        <li onClick={() => this.slideTo(3)}>恒博彩票</li>
-                                        <li onClick={() => this.slideTo(4)}>电子游艺</li>
-                                        <li onClick={() => this.slideTo(5)}>真人娱乐</li>
-                                        <li onClick={() => this.slideTo(6)}>棋牌游戏</li>
+                                        <li onClick={() => this.slideTo(5)}>恒博彩票</li>
+                                        <li onClick={() => this.slideTo(3)}>全民代理</li>
+                                        <li onClick={() => this.slideTo(4)}>聊天室</li>
+                                        <li onClick={() => this.slideTo(6)}>电子游艺</li>
+                                        <li onClick={() => this.slideTo(7)}>真人娱乐</li>
+                                        <li onClick={() => this.slideTo(8)}>棋牌游戏</li>
                                     </ul>
                                 </div>
                             </div>
