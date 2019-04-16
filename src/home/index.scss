@@ -166,10 +166,10 @@ body, .body-wrap {
     // 第一页 首页
     &.home-wrap {
       width: 100%;
-      max-width: 1020px;
+      max-width: 1200px;
       @media screen and (max-width: 1600px) {
         width: 100%;
-        max-width: 1020px;
+        max-width: 1200px;
       }
       @media screen and (max-width: 1300px) {
         width: 100%;
@@ -256,13 +256,13 @@ body, .body-wrap {
           }
           li {
             list-style: none;
-            padding: 10px;
+            padding: 20px;
             font-size: 36px;
             color: #fff;
             cursor: pointer;
             @media screen and (max-width: 1600px) {
               list-style: none;
-              padding: 10px;
+              padding: 20px;
               font-size: 36px;
               color: #fff;
               cursor: pointer;
@@ -277,7 +277,7 @@ body, .body-wrap {
             @media screen and (max-width: 1000px) {
               list-style: none;
               padding: 10px 5px;
-              font-size: 25px;
+              font-size: 24px;
               color: #fff;
               cursor: pointer;
             }
