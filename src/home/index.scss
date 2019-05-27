@@ -1334,12 +1334,12 @@ body, .body-wrap {
           }
           @media screen and (max-width: 600px) {
             width: 95%;
-            height: 100px;
+            height: 110px;
             overflow: hidden;
             margin: 15px auto 0 auto;
           }
           > img {
-            margin-top: 40px;
+            margin-top: 30px;
             width: 154px;
             height: 154px;
             @media screen and (max-width: 600px) {
@@ -1357,22 +1357,25 @@ body, .body-wrap {
             line-height: 24px;
             @media screen and (max-width: 600px) {
               float: left;
+              font-size: 22px;
               margin-top: 10px;
               margin-left: 5%;
             }
           }
           > p {
             margin-top: 20px;
-            font-size: 24px;
+            font-size: 20px;
             line-height: 34px;
+            text-align: left;
+            padding-left: 40px;
             @media screen and (max-width: 600px) {
-              width: 60%;
               float: left;
+              padding-left: 0px;
               text-align: left;
               font-size: 16px;
               margin-top: 5px;
               margin-left: 5%;
-              line-height: 24px;
+              line-height: 22px;
             }
           }
         }
