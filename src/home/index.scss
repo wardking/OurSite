@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-weight: 500;
+  box-sizing: border-box;
 }
 
 html {
@@ -219,7 +220,7 @@ body, .body-wrap {
         width: 80%;
         max-width: 420px;
         height: 68px;
-        margin: 50px auto 0;
+        margin: 50px auto 80px;
         color: #fff;
         border: 1px solid #fff;
         font-size: 42px;
@@ -230,7 +231,7 @@ body, .body-wrap {
           width: 80%;
           max-width: 420px;
           height: 68px;
-          margin: 10px auto 0;
+          margin: 10px auto 20px;
           color: #fff;
           border: 1px solid #fff;
           font-size: 42px;
@@ -239,54 +240,52 @@ body, .body-wrap {
           text-align: center;
         }
         @media screen and (max-width: 600px) {
-          margin: 10px auto 0;
+          margin: 10px auto 20px;
           font-size: 20px;
         }
       }
       .company-game {
         ul {
-          margin-top: 80px;
           display: flex;
-          justify-content: space-between;
+          justify-content: center;
+          flex-wrap: wrap;
           @media screen and (max-width: 1600px) {
-            margin: 50px auto 0;
+            margin: 0 auto;
           }
           @media screen and (max-width: 600px) {
-            margin: 50px auto 0;
+            margin: 0 auto;
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
             text-align: center;
           }
           li {
             list-style: none;
+            width: 20%;
             padding: 20px;
             font-size: 36px;
             color: #fff;
+            text-align: center;
             cursor: pointer;
             @media screen and (max-width: 1600px) {
-              list-style: none;
               padding: 20px;
               font-size: 36px;
               color: #fff;
               cursor: pointer;
             }
             @media screen and (max-width: 1300px) {
-              list-style: none;
               padding: 10px 5px;
               font-size: 27px;
               color: #fff;
               cursor: pointer;
             }
             @media screen and (max-width: 1000px) {
-              list-style: none;
               padding: 10px 5px;
               font-size: 24px;
+              width: 25%;
               color: #fff;
               cursor: pointer;
             }
             @media screen and (max-width: 600px) {
-              width: 33.3%;
               font-size: 18px;
               padding: 0;
               line-height: 28px;
@@ -324,26 +323,26 @@ body, .body-wrap {
     &.agency-wrap {
       .head-title {
         width: 625px;
+        margin: 20px auto 0 auto;
         background-image: url("../imgs/title3.gif");
         @media screen and (max-width: 1600px) {
           width: 60%;
           margin: 20px auto 0 auto;
           background-size: 100%;
           background-position: center center;
-          left: 167px;
         }
         @media screen and (max-width: 600px) {
           width: 90%;
           margin: 20px auto 0 auto;
           background-size: 100%;
           background-position: center center;
-          left: 0;
         }
       }
+
       .lotteryCont {
+        position: relative;
         > .description {
-          margin: 40px auto 0;
-          max-width: 1200px;
+          display: block;
           text-align: left;
           @media screen and (max-width: 600px) {
             display: block;
@@ -364,18 +363,60 @@ body, .body-wrap {
             font-size: 14px;
           }
         }
+        .get-more{
+          position: absolute;
+          bottom:-60px;
+
+          width: 120px;
+          height: 46px;
+          background: transparent;
+          color:#fff;
+          border:1px solid #fff;
+          border-radius:10px;
+          letter-spacing: 2px;
+          cursor:pointer;
+          &:hover{
+            background:rgba(255,255,255,0.1);
+          }
+          @media screen and (max-width: 600px) {
+            width: 70px;
+            height: 30px;
+            left: 20px;
+            bottom:-50px;
+            font-size: 12px;
+            border-radius:5px;
+          }
+        }
       }
       .agency-img {
         display: block;
         width: 100%;
         margin: 30px auto 0 auto;
         @media screen and (max-width: 1600px) {
-          width: 47%;
-          margin: 30px auto 0 auto;
+          margin: 55px auto 0 ;
         }
         @media screen and (max-width: 600px) {
           width: 93%;
-          margin: 30px auto 0 auto;
+          margin: 55px auto 0 ;
+        }
+      }
+    }
+
+    // 层层代理
+    &.normal-agency-wrap {
+      .head-title {
+        background-image: url("../imgs/normal-agency-title.png");
+      }
+      .agency-img {
+        display: block;
+        width: 100%;
+        margin: 10px auto 0 auto;
+        @media screen and (max-width: 1600px) {
+          margin: 55px auto 0 ;
+        }
+        @media screen and (max-width: 600px) {
+          width: 93%;
+          margin: 55px auto 0 ;
         }
       }
     }
@@ -816,14 +857,14 @@ body, .body-wrap {
 
         .charts {
           width: 140px;
-          height: 140px;
+          height: 180px;
           border-radius: 16px;
           padding: 0 15px;
           box-shadow: 0 7px 15px #e0dede;
           background: #fff;
           @media only screen and (max-width: 1600px) {
             width: 140px;
-            height: 150px;
+            height: 180px;
             border-radius: 16px;
             padding: 0 15px;
             box-shadow: 0 7px 15px #e0dede;
@@ -1370,6 +1411,7 @@ body, .body-wrap {
             padding-left: 40px;
             @media screen and (max-width: 600px) {
               float: left;
+              width: 50%;
               padding-left: 0px;
               text-align: left;
               font-size: 16px;

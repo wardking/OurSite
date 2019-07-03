@@ -2,11 +2,15 @@ import React, {Component} from 'react';
 import '../agency/index.scss';
 import LogoWhite from "../imgs/logo_white.png";
 import LogoBlue from "../imgs/logo_blue.png";
-import * as serviceWorker from "../serviceWorker";
-import agency01 from '../imgs/agencym01.png';
-import agency02 from '../imgs/agencym02.png';
-import agency03 from '../imgs/agencym03.png';
-import agency04 from '../imgs/agencym04.png';
+
+import Img1 from './imgs/01.png'
+import Img2 from './imgs/02.png'
+import Img3 from './imgs/03.png'
+import Img4 from './imgs/04.png'
+import ImgM1 from './imgs/m01.png'
+import ImgM2 from './imgs/m02.png'
+import ImgM3 from './imgs/m03.png'
+import ImgM4 from './imgs/m04.png'
 
 export default class Agency extends Component {
     componentDidMount(){
@@ -21,21 +25,17 @@ export default class Agency extends Component {
                 <div>
                     <div className="container bg9">
                         <Logo/>
-                        <div className="content agencyCont">
-                            <div className="head-title"></div>
-                            <div className='agencyMain'>
-                                <div className='agency-img01'>
-                                    <img src={agency01} alt=""/>
-                                </div>
-                                <div className='agency-img02'>
-                                    <img src={agency02} alt=""/>
-                                </div>
-                                <div className='agency-img03'>
-                                    <img src={agency03} alt=""/>
-                                </div>
-                                <div className='agency-img04'>
-                                    <img src={agency04} alt=""/>
-                                </div>
+                        <div className="agency-detail-wrap">
+                            <div className="agency-detail">
+                                <img className="big-img" src={Img1} alt=""/>
+                                <img className="big-img" src={Img2} alt=""/>
+                                <img className="big-img" src={Img3} alt=""/>
+                                <img className="big-img" src={Img4} alt=""/>
+
+                                <img className="small-img" src={ImgM1} alt=""/>
+                                <img className="small-img" src={ImgM2} alt=""/>
+                                <img className="small-img" src={ImgM3} alt=""/>
+                                <img className="small-img" src={ImgM4} alt=""/>
                             </div>
                         </div>
                     </div>
@@ -51,14 +51,3 @@ const Logo = (props) => <a className="logo" href="/">
     <h1><img src={props.white ? LogoWhite : LogoBlue} alt="恒博"/></h1>
 </a>
 
-/*const DownPage = (props) => <div onClick={() => {
-    props.goNext();
-}} className={props.type ? "down-page down-page-black infinite" : "down-page infinite"}/>*/
-
-
-//ReactDOM.render(<PageRoute/>, document.getElementById('root'));
-//ReactDOM.render(<Home/>, document.getElementById('root'));
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();

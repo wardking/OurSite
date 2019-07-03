@@ -12,6 +12,7 @@ import LogoBlue from "../imgs/logo_blue.png";
 import lotteryImg from "../imgs/lottery.png";
 import companyBg from "../imgs/company-bg.png";
 import agencyBg from "../imgs/agency-bg.png";
+import normalAgencyBg from "../imgs/normal-agency.png";
 import lotteryBg from "../imgs/lottery-bg.png";
 import egameBg from "../imgs/egame-bg.png";
 import chessBg from "../imgs/chess-bg.png";
@@ -91,38 +92,39 @@ export default class Home extends React.Component {
                 animateCss('.chat-wrap .head-title', 'bounceInLeft');
                 animateCss('.chat-img', 'pulse');
                 break;
-            case 5:
+            case 6:
                 animateCss('.lottery-wrap .head-title', 'bounceInLeft');
                 animateCss('.lottery-img', 'pulse');
                 break;
-            case 6:
+            case 7:
                 animateCss('.egame-wrap .head-title', 'bounceInLeft');
                 animateCss('.egame-bg', 'pulse');
                 break;
-            case 7:
+            case 8:
                 animateCss('.og-game-wrap .head-title', 'bounceInLeft');
                 break;
-            case 8:
+            case 9:
                 animateCss('.chess-wrap .head-title', 'bounceInLeft');
                 animateCss('.chess-bg', 'pulse');
                 break;
-            case 9:
+            case 10:
                 for (let i = 1; i < 9; ++i) {
                     setTimeout(() => {
                         animateCss('.charts' + i, 'heartBeat');
                     }, i * 300);
                 }
                 break;
-            case 10:
+            case 11:
                 animateCss('.si1sj', 'fadeInLeft');
                 animateCss('.si2sj', 'fadeInLeft');
                 animateCss('.si4sj', 'fadeInRight');
                 animateCss('.si5sj', 'fadeInRight');
                 animateCss('.si6sj', 'fadeInRight');
                 break;
-            case 11:
+            case 12:
                 animateCss('.contact-wrap .head-title', 'bounceInLeft');
                 break;
+
             case 0:
             default:
                 animateCss('.company-logo', 'fadeIn');
@@ -168,13 +170,16 @@ export default class Home extends React.Component {
                                 <div className="company-about">彩票包网提供商</div>
                                 <div className="company-game">
                                     <ul>
-                                        <li onClick={() => this.slideTo(5)}>恒博彩票</li>
+                                        <li onClick={() => this.slideTo(6)}>恒博彩票</li>
                                         <li onClick={() => this.slideTo(3)}>全民代理</li>
-                                        <li onClick={() => this.slideTo(4)}>聊天室</li>
+                                        <li onClick={() => this.slideTo(4)}>层层代理</li>
+
+                                        <li onClick={() => this.slideTo(5)}>聊天室</li>
                                         <li onClick={() => this.slideTo(6)}>电子游艺</li>
-                                        <li onClick={() => this.slideTo(7)}>真人娱乐</li>
-                                        <li onClick={() => this.slideTo(8)}>棋牌游戏</li>
+                                        <li onClick={() => this.slideTo(8)}>真人娱乐</li>
+                                        <li onClick={() => this.slideTo(9)}>棋牌游戏</li>
                                     </ul>
+
                                 </div>
                             </div>
                         </div>
@@ -216,15 +221,38 @@ export default class Home extends React.Component {
                                 </Link>
                                 <div className='lotteryCont'>
                                     <span
-                                        className="description">您的佣金构成不仅来自于您自己，更有代理进账返佣。根据业绩的高低，划分不同佣金比例和代理等级，您的自营越高，代理越多相对应的等级越高，返佣越多。</span>
+                                        className="description">您的佣金构成不仅来自于您的直属会员投注，更有会员开展下级用户的返佣进账。根据业绩的高低，划分不同佣金比例和会员的代理等级，您的有效直属会员越多，自营直推越高，返佣越多。</span>
                                     <p>
                                         <span className='desList'>无限代理</span>
                                         <span className='desList'>无限封顶</span>
                                         <span className='desList'>共同助力</span>
                                         <span className='desList'>日日进账</span>
                                     </p>
+                                    <Link to="/agency/3"><button className="get-more" >查看更多</button></Link>
                                 </div>
                                 <img className="agency-img" src={agencyBg} alt="全名代理"/>
+                            </div>
+
+                        </div>
+                    </div>
+                    {/*层层代理*/}
+                    <div style={this.state.size}>
+                        <div className="container bg5">
+                            <Logo white={1}/>
+                            <DownPage goNext={this.goNext}/>
+                            <div className="content agency-wrap normal-agency-wrap">
+                                <Link to='/normal-agency'>
+                                    <div className="head-title"></div>
+                                </Link>
+                                <div className='lotteryCont'>
+                                    <span
+                                        className="description">层层代理 上级代理给下级代理设置奖金组，不同奖金组对应不同赔率、投注返点，下级代理奖金组不能高于上级代理奖金组，代理可获得的佣金取决于代理自身投注返点与下级投注返点的差值。</span>
+                                    <span className="description">日工资系统 可以快速的帮助各盘口推广代理并且自动发放工资。</span>
+                                    <span className="description">日工资契约是由上级代理和下级代理自愿签署的日工资协议，该协议将更好的约束上级代理的行为，保障下级代理的切身利益。</span>
+                                    <Link to="/normal-agency/4"><button className="get-more" >查看更多</button></Link>
+                                </div>
+
+                                <img className="agency-img" src={normalAgencyBg} alt="层层代理"/>
                             </div>
 
                         </div>

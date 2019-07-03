@@ -1,0 +1,27 @@
+.normal-agency-detail-wrap{
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  .normal-agency-detail{
+    padding: 100px 20px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  img{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .big-img{
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+  .small-img{
+    display: none;
+    @media screen and (max-width: 600px) {
+      display: block;
+    }
+  }
+
+
+}
