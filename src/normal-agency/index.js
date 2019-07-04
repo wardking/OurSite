@@ -3,6 +3,7 @@ import './index.scss';
 import LogoWhite from "../imgs/logo_white.png";
 import LogoBlue from "../imgs/logo_blue.png";
 
+import Img0 from './imgs/00.png'
 import Img1 from './imgs/01.png'
 import Img2 from './imgs/02.png'
 import Img3 from './imgs/03.png'
@@ -26,6 +27,7 @@ export default class NormalAgency extends Component {
                         <Logo/>
                         <div className="normal-agency-detail-wrap">
                             <div className="normal-agency-detail">
+                                <img className="big-img center" src={Img0} alt=""/>
                                 <img className="big-img" src={Img1} alt=""/>
                                 <img className="big-img" src={Img2} alt=""/>
                                 <img className="big-img" src={Img3} alt=""/>

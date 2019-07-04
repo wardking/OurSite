@@ -462,10 +462,10 @@ body, .body-wrap {
     // 彩票
     &.lottery-wrap {
       .head-title {
-        width: 363px;
+        width: 500px;
         background-image: url("../imgs/title4.png");
         @media screen and (max-width: 600px) {
-          width: 50%;
+          width: 80%;
           margin: 0 auto;
           background-size: 100%;
           background-position: center center;
