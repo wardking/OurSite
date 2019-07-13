@@ -1,5 +1,6 @@
 import React from 'react';
-//import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 import '../swiper.scss';
 import {Link} from 'react-router-dom';
 //https://daneden.github.io/animate.css/
@@ -475,26 +476,50 @@ export default class Home extends React.Component {
                                     <li>
                                         <img src={whatsappImg} alt=""/>
                                         <h5>WhatsApp</h5>
-                                        <p>
-                                            恒博：+18283324666<br/>
-                                            大川：+639273123456
-                                        </p>
+                                        <CopyToClipboard text="18283324666">
+                                            <p>
+                                                <div>恒博：+18283324666</div>
+                                                <span className="copy-btn">点击复制</span>
+                                            </p>
+                                        </CopyToClipboard>
+                                        <CopyToClipboard text="639273123456">
+                                            <p className="no-margin-top" title="点击复制">
+                                                <div>大川：+639273123456</div>
+                                                <span className="copy-btn">点击复制</span>
+                                            </p>
+                                        </CopyToClipboard>
                                     </li>
                                     <li>
                                         <img src={telegramImg} alt=""/>
                                         <h5>Telegram</h5>
-                                        <p>
-                                            恒博：+18283324666<br/>
-                                            大川：+639273123456
-                                        </p>
+                                        <CopyToClipboard text="18283324666">
+                                            <p>
+                                                <div>恒博：+18283324666</div>
+                                                <span className="copy-btn">点击复制</span>
+                                            </p>
+                                        </CopyToClipboard>
+                                        <CopyToClipboard text="639273123456">
+                                            <p className="no-margin-top" title="点击复制">
+                                                <div>大川：+639273123456</div>
+                                                <span className="copy-btn">点击复制</span>
+                                            </p>
+                                        </CopyToClipboard>
                                     </li>
                                     <li>
                                         <img src={phoneImg} alt=""/>
                                         <h5>Telephone</h5>
-                                        <p>
-                                            恒博：+639771123456<br/>
-                                            大川：+639273123456
-                                        </p>
+                                        <CopyToClipboard text="639771123456">
+                                            <p title="点击复制">
+                                                <div>恒博：+639771123456</div>
+                                                <span className="copy-btn">点击复制</span>
+                                            </p>
+                                        </CopyToClipboard>
+                                        <CopyToClipboard text="639273123456">
+                                            <p className="no-margin-top" title="点击复制">
+                                                <div>大川：+639273123456</div>
+                                                <span className="copy-btn">点击复制</span>
+                                            </p>
+                                        </CopyToClipboard>
                                     </li>
                                 </ul>
                             </div>
