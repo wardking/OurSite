@@ -178,6 +178,7 @@ export default class Home extends React.Component {
                                         <li onClick={() => this.slideTo(5)}>聊天室</li>
                                         <li onClick={() => this.slideTo(6)}>电子游艺</li>
                                         <li onClick={() => this.slideTo(8)}>真人娱乐</li>
+                                        <li onClick={() => this.slideTo(12)}>联系我们</li>
                                         <li onClick={() => this.slideTo(9)}>棋牌游戏</li>
                                     </ul>
 
@@ -266,7 +267,7 @@ export default class Home extends React.Component {
                             <div className="content chat-wrap">
                                 <div className="head-title"/>
 
-                                <p className="description">最新聊天室，不仅支持流畅聊天，还有发红包、分享注单以及快捷投注功能和优势，更能第一时间获取最新热门投注资讯，让您的游戏
+                                <p className="description">最新聊天室，不仅支持流畅聊天，更支持<span className='purple'>私聊</span>,还有发红包、分享注单以及快捷投注功能和优势，更能第一时间获取最新热门投注资讯，让您的游戏
                                     更加温暖。</p>
                                 <img className="chat-img" src={chatImg} alt="恒博新彩种"/>
                             </div>

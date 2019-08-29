@@ -63,6 +63,11 @@ body, .body-wrap {
   background: url("../imgs/bg2.png") top center no-repeat;
 }
 
+.purple {
+  color: #e83be6;
+  font-size: 22px;
+}
+
 .container {
   height: 100%;
   display: flex;
@@ -363,28 +368,28 @@ body, .body-wrap {
             font-size: 14px;
           }
         }
-        .get-more{
+        .get-more {
           position: absolute;
-          bottom:-60px;
+          bottom: -60px;
 
           width: 120px;
           height: 46px;
           background: transparent;
-          color:#fff;
-          border:1px solid #fff;
-          border-radius:10px;
+          color: #fff;
+          border: 1px solid #fff;
+          border-radius: 10px;
           letter-spacing: 2px;
-          cursor:pointer;
-          &:hover{
-            background:rgba(255,255,255,0.1);
+          cursor: pointer;
+          &:hover {
+            background: rgba(255, 255, 255, 0.1);
           }
           @media screen and (max-width: 600px) {
             width: 70px;
             height: 30px;
             left: 20px;
-            bottom:-50px;
+            bottom: -50px;
             font-size: 12px;
-            border-radius:5px;
+            border-radius: 5px;
           }
         }
       }
@@ -393,11 +398,11 @@ body, .body-wrap {
         width: 100%;
         margin: 30px auto 0 auto;
         @media screen and (max-width: 1600px) {
-          margin: 55px auto 0 ;
+          margin: 55px auto 0;
         }
         @media screen and (max-width: 600px) {
           width: 93%;
-          margin: 55px auto 0 ;
+          margin: 55px auto 0;
         }
       }
     }
@@ -412,11 +417,11 @@ body, .body-wrap {
         width: 100%;
         margin: 10px auto 0 auto;
         @media screen and (max-width: 1600px) {
-          margin: 55px auto 0 ;
+          margin: 55px auto 0;
         }
         @media screen and (max-width: 600px) {
           width: 93%;
-          margin: 55px auto 0 ;
+          margin: 55px auto 0;
         }
       }
     }
@@ -856,14 +861,14 @@ body, .body-wrap {
         }
 
         .charts {
-          width: 140px;
+          width: 170px;
           height: 180px;
           border-radius: 16px;
           padding: 0 15px;
           box-shadow: 0 7px 15px #e0dede;
           background: #fff;
           @media only screen and (max-width: 1600px) {
-            width: 140px;
+            width: 170px;
             height: 180px;
             border-radius: 16px;
             padding: 0 15px;
@@ -909,6 +914,7 @@ body, .body-wrap {
             text-align: center !important;
             font-weight: 600;
             line-height: 26px;
+            letter-spacing: 1px;
             @media only screen and (max-width: 1600px) {
               text-align: center !important;
               font-weight: 600;
@@ -1411,21 +1417,21 @@ body, .body-wrap {
             padding-left: 40px;
             cursor: pointer;
             position: relative;
-            &.no-margin-top{
-              margin-top:0;
+            &.no-margin-top {
+              margin-top: 0;
             }
-            &:hover{
-              .copy-btn{
+            &:hover {
+              .copy-btn {
                 display: block;
               }
             }
-            .copy-btn{
+            .copy-btn {
               display: none;
               position: absolute;
-              right:-10px;
-              top:0;
-              font-size:12px;
-              color:#00407E;
+              right: -10px;
+              top: 0;
+              font-size: 12px;
+              color: #00407E;
               animation: shake 1s infinite;
             }
             @media screen and (max-width: 600px) {
@@ -1437,8 +1443,8 @@ body, .body-wrap {
               margin-top: 5px;
               margin-left: 5%;
               line-height: 22px;
-              .copy-btn{
-                right:-50px;
+              .copy-btn {
+                right: -50px;
               }
             }
           }
@@ -1470,30 +1476,31 @@ body, .body-wrap {
     }
   }
 }
-@keyframes shake{
-        0%{
-            opacity: 1;
-        }
-        25%{
-          opacity: 0.75;
-        }
-        50%{
 
-            opacity: 0.5;
+@keyframes shake {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.75;
+  }
+  50% {
 
-        }
-        75%{
+    opacity: 0.5;
 
-          opacity: 0.25;
+  }
+  75% {
 
-        } 
-        100%{
+    opacity: 0.25;
 
-            opacity: 1;
+  }
+  100% {
 
-        }
+    opacity: 1;
 
-    }
+  }
+
+}
 
 
 
