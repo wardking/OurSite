@@ -479,13 +479,7 @@ export default class Home extends React.Component {
                                         <h5>WhatsApp</h5>
                                         <CopyToClipboard text="18283324666">
                                             <p>
-                                                <div>恒博：+18283324666</div>
-                                                <span className="copy-btn">点击复制</span>
-                                            </p>
-                                        </CopyToClipboard>
-                                        <CopyToClipboard text="639273123456">
-                                            <p className="no-margin-top" title="点击复制">
-                                                <div>大川：+639273123456</div>
+                                                <div>商务：+63 9167933415</div>
                                                 <span className="copy-btn">点击复制</span>
                                             </p>
                                         </CopyToClipboard>
@@ -495,13 +489,7 @@ export default class Home extends React.Component {
                                         <h5>Telegram</h5>
                                         <CopyToClipboard text="18283324666">
                                             <p>
-                                                <div>恒博：+18283324666</div>
-                                                <span className="copy-btn">点击复制</span>
-                                            </p>
-                                        </CopyToClipboard>
-                                        <CopyToClipboard text="639273123456">
-                                            <p className="no-margin-top" title="点击复制">
-                                                <div>大川：+639273123456</div>
+                                                <div>商务：+63 9167933415</div>
                                                 <span className="copy-btn">点击复制</span>
                                             </p>
                                         </CopyToClipboard>
@@ -511,13 +499,7 @@ export default class Home extends React.Component {
                                         <h5>Telephone</h5>
                                         <CopyToClipboard text="639771123456">
                                             <p title="点击复制">
-                                                <div>恒博：+639771123456</div>
-                                                <span className="copy-btn">点击复制</span>
-                                            </p>
-                                        </CopyToClipboard>
-                                        <CopyToClipboard text="639273123456">
-                                            <p className="no-margin-top" title="点击复制">
-                                                <div>大川：+639273123456</div>
+                                                <div>商务：+63 9167933415</div>
                                                 <span className="copy-btn">点击复制</span>
                                             </p>
                                         </CopyToClipboard>
